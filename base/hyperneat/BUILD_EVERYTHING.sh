@@ -16,7 +16,7 @@
 # $ cd /usr
 # $ find * | grep libboost_filesystem.a
 #
-boost_stage=/usr/local/lib # change me!  
+boost_stage=/home/heinmr/Documents/boost_1_56_0/stage/lib/
 #===================================================================================================
 
 # Nothing after this point SHOULD need to be changed:
@@ -38,6 +38,7 @@ then
 else
     echo Building TinyXML
     cd ${rootDir}
+    mkdir zlib/build/
     mkdir zlib/build/cygwin_debug
     mkdir zlib/build/cygwin_release
     cd zlib
@@ -45,6 +46,7 @@ else
     make
 
     cd ..
+    mkdir tinyxmldll/build/
     mkdir tinyxmldll/build/cygwin_debug
     mkdir tinyxmldll/build/cygwin_release
     cd tinyxmldll
