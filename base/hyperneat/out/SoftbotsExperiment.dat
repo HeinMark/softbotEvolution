@@ -1,10 +1,11 @@
 // GENERAL EVOLUTIONARY PARAMETERS:
 //---------------------------------
-PopulationSize 10.0 				// population size
-MaxGenerations 10.0	 			// max generations of evolution
+PopulationSize 1.0 				// population size
+MaxGenerations 1.0	 			// max generations of evolution
 TournamentSize 2 				// size of tournament for selection (note: larger tournaments = more selection pressure)
 RandomSeed -1.0 				// note: this will be overwritten with your -R [seed] command line arguement (-1 uses the current time as your seed)
 PopulationNumber 1.0				// Number of the population to differentiate between competing populations
+MinPercentVoxelsFilled 50
 
 
 // HyperNEAT SPECIFIC PARAMETERS:

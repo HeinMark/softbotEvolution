@@ -1,0 +1,9 @@
+# 1. generation
+# 2. genChamp Fitness1 (Maxmimize Distance)
+# 3. genChamp Fitness2 (Minimize Voxels)
+# 4. genChamp Node Count
+# 5. average Fitness1 (Maxmimize Distance)
+# 6. average Fitness2 (Minimize Voxels)
+# 7. average Node Count
+
+0001 	0.000001 	1.100000 	0011 	0.000001 	1.100000 	0.000001 	

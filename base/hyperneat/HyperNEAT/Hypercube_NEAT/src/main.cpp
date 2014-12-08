@@ -64,6 +64,7 @@ int HyperNEAT_main(int argc,char **argv)
 			   else
 				   cout << "Using the following parameter file: " << paramFileName << endl;
 		   }
+			
 		if (argc<=1)
 		{
 			cout << "You must pass the parameters and the output file as command "
@@ -312,12 +313,7 @@ int HyperNEAT_main(int argc,char **argv)
 			cout << "Seeding, so decrement all gen counters by one. " << endl;
 			NEAT::Globals::getSingleton()->setParameterValue("SeedingSoDecrementByOne", 1.0);			
 		}
-		if(commandLineParser.HasSwitch("-P"))
-		{
-			int _populationNumber = atoi(commandLineParser.GetSafeArgument("-P",0,"0").c_str());
-			NEAT::Globals::getSingleton()->setParameterValue("PopulationNumber", _populationNumber);			
-		}
-			
+		
 		if(commandLineParser.HasSwitch("-R"))
 		{
 			NEAT::Globals::getSingleton()->seedRandom(stringTo<unsigned int>(commandLineParser.GetSafeArgument("-R",0,"0")));
@@ -355,7 +351,16 @@ int HyperNEAT_main(int argc,char **argv)
 			SET_PARAMETER("TerminalFitness",atof(commandLineParser.GetSafeArgument("-T",0,"0").c_str()));
 		}
 		
-		
+		if(commandLineParser.HasSwitch("-P1"))
+		{
+			cout << "Setting population number to be 1\n";
+			NEAT::Globals::getSingleton()->setParameterValue("PopulationNumber", 1);			
+		}
+		if(commandLineParser.HasSwitch("-P2"))
+		{
+			cout << "Setting population number to be 2\n";
+			NEAT::Globals::getSingleton()->setParameterValue("PopulationNumber", 2);			
+		}
 	
 		int experimentType = int(GET_PARAMETER("ExperimentType")+0.001);
 		
