@@ -18,13 +18,14 @@
 #   $ find /usr/* | grep boost/shared_ptr.hpp
 # NOTE: if you intalled boost locally, replace "/usr/*" above with the location of your boost installation:
 #
-boost_stage=/usr/local/lib # change me!  
-boost_root=/usr/include    # change me!
+boost_stage=/usr/lib/x86_64-linux-gnu/
+boost_root=/usr/include/
 #===================================================================================================
 
 # Nothing after this point SHOULD need to be changed:
 
 echo Building required packages
+echo $(SFML_root)
 echo
 
 rootDir=`pwd`
