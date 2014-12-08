@@ -92,14 +92,97 @@ namespace NEAT
 		
 		//set those invididuals beyond SurvivalThreshold percent of the species as not able to reproduce (supposed to filter the top SurvivalThreshold% of the species. 
 
+        // Sort by fitness (nac)
+        for (int a=0;a<(int)currentIndividuals.size();a++)
+        {
+            for (int b=0;b<((int)currentIndividuals.size()-(a+1));b++)
+            {
+                if (currentIndividuals[b]->getFitness()<currentIndividuals[b+1]->getFitness())
+                {
+                    shared_ptr<GeneticIndividual> ind = currentIndividuals[b];
+                    currentIndividuals[b] = currentIndividuals[b+1];
+                    currentIndividuals[b+1] = ind;
+                }
+            }
+        }
+
+
+        // IF MULTI-OBJECTIVE (nac)
+        if (int(NEAT::Globals::getSingleton()->getParameterValue("PenaltyType")) > 0) 
+        {
+
+            // CALCULATE DOMINATED RANKS
+            for (int a=0;a<(int)currentIndividuals.size();a++)
+            {
+                currentIndividuals[a]->setDominatedBy(0);
+                for (int b=0;b<(int)currentIndividuals.size();b++)
+                {
+                    // HERE: MAXIMIZE FIRST OBJECTIVE, MINIMIZE SECOND
+                    if (a!=b and currentIndividuals[b]->getFitness() > currentIndividuals[a]->getFitness() and currentIndividuals[b]->getFitness2() < currentIndividuals[a]->getFitness2() )
+                    {
+                        currentIndividuals[a]->setDominatedBy( currentIndividuals[a]->getDominatedBy()+1 );
+                    }
+                }
+            }
+
+            // CALCULATE DIVERSITY
+            for (int a=0;a<(int)currentIndividuals.size();a++)
+            {
+                currentIndividuals[a]->setDiversity(0.0);
+            }
+
+            for (int a=0;a<(int)currentIndividuals.size();a++)
+            {
+                for (int b=0;b<(int)currentIndividuals.size();b++)
+                {
+                    // HERE: MAXIMIZE FIRST OBJECTIVE, MINIMIZE SECOND
+                    if (a!=b and currentIndividuals[b]->getFitness() == currentIndividuals[a]->getFitness() and currentIndividuals[b]->getFitness2() == currentIndividuals[a]->getFitness2()  and currentIndividuals[b]->getDiversity() == 0 )
+                    {
+                        // cout << a << " and " << b << " tied. Div a: " << currentIndividuals[a]->getDiversity() << ", Div b: " << currentIndividuals[b]->getDiversity() << endl;
+                        currentIndividuals[a]->setDiversity( currentIndividuals[a]->getDiversity()+1 );
+                        currentIndividuals[a]->setDominatedBy( currentIndividuals[a]->getDominatedBy()+1 );
+                    }
+                }
+            }
+
+            // SORT BY DOMINATED RANK
+            for (int a=0;a<(int)currentIndividuals.size();a++)
+            {
+                for (int b=0;b<((int)currentIndividuals.size()-(a+1));b++)
+                {
+                    if (currentIndividuals[b]->getDominatedBy() > currentIndividuals[b+1]->getDominatedBy())
+                    {
+                        shared_ptr<GeneticIndividual> ind = currentIndividuals[b];
+                        currentIndividuals[b] = currentIndividuals[b+1];
+                        currentIndividuals[b+1] = ind;
+                    }
+                }
+            }
+
+            // PRINT TO DEBUG
+            for (int a=0;a<(int)currentIndividuals.size();a++)
+            {
+                cout << currentIndividuals[a]->getFitness() << ", " << currentIndividuals[a]->getFitness2() << ": " << currentIndividuals[a]->getDominatedBy() << endl;
+                // PRINT( currentIndividuals[a]->getFitness() );
+                // PRINT( currentIndividuals[a]->getFitness2() );
+                // PRINT( currentIndividuals[a]->getDominatedBy() );
+            }
+        }
+
+        // PRINT(currentIndividuals.size());
+        // for (int i=0; i<currentIndividuals.size(); i++)
+        // {
+        //     PRINT(currentIndividuals[i]->getFitness());
+        // }
+
 		for (int a=lastIndex+1;a<(int)currentIndividuals.size();a++)
 		{ 
-			PRINT(a);
-			PRINT(currentIndividuals.size());
+			// PRINT(a);
+			// PRINT(currentIndividuals.size());
 			
 			currentIndividuals[a]->setCanReproduce(false);
-			cout << "jmc: this code is buggy: it disallows the last n percent of offspring to reproduce, but on a randomly ordered vector: so highly fit orgs can be disallowed" << endl;
-			exit(30);
+			// cout << "jmc: this code is buggy: it disallows the last n percent of offspring to reproduce, but on a randomly ordered vector: so highly fit orgs can be disallowed" << endl;
+			// exit(30);
 		}
 		
 
@@ -120,10 +203,10 @@ namespace NEAT
 
 		
 		//debugging: checking whether currentIndividuals is sorted by fitness
-		cout << "IS FITNESS SORTED" << endl;
+		cout << "IS FITNESS SORTED?  Can they reproduce?" << endl;
 		for (int a=0;a<(int)currentIndividuals.size();a++)
 		{ 
-			cout << a << ": " << currentIndividuals[a]->getFitness() << endl;
+			cout << a << ": " << currentIndividuals[a]->getFitness() << ": "<< currentIndividuals[a]->getCanReproduce() << endl;
 
 		}
 

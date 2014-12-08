@@ -13,7 +13,7 @@
 #include <tinyxml.h> // #include “tinyxml.h"?
 
 #ifdef VISUALIZESHAPES
-#include <SFML/Graphics.hpp>
+//#include <SFML/Graphics.hpp>
 #endif
 #include <sstream>
 #include <map>
@@ -42,6 +42,11 @@ namespace HCUBE
     	}
 
     	if (NEAT::Globals::getSingleton()->getParameterValue("PrintCPPNs") > 0) int exitCode0 = std::system("mkdir CPPNs");
+
+    	if (NEAT::Globals::getSingleton()->getParameterValue("BoundingBoxX") > 0)
+    	{
+    		NEAT::Globals::getSingleton()->setParameterValue("MaxTotalVoxels",NEAT::Globals::getSingleton()->getParameterValue("BoundingBoxX")*NEAT::Globals::getSingleton()->getParameterValue("BoundingBoxY")*NEAT::Globals::getSingleton()->getParameterValue("BoundingBoxZ") );	
+    	}
     }
 
     NEAT::GeneticPopulation* SoftbotsExperiment::createInitialPopulation(int populationSize)
@@ -82,9 +87,9 @@ namespace HCUBE
     double SoftbotsExperiment::processEvaluation(shared_ptr<NEAT::GeneticIndividual> individual)
     {
 		fitness = 0.000001; // minimum fitness value (must be greater than zero)
-		individual->setOrigFitness(0.000001); 
-		// just record keeping, so that original fitness can record distnace after the actual fitness has been adjusted by penalties
-
+		fitness2 = 1.1; // worst fitness value (higher is better, max is 1)
+		individual->setOrigFitness(fitness); // just record keeping, so that original fitness can record distnace after the actual fitness has been adjusted by penalties
+		individual->setFitness2(fitness2);
 
 		// Create Phenotype from CPPN ===========================================================================================================================
 
@@ -174,9 +179,9 @@ namespace HCUBE
 		// std::cout << "voxels filled  = " << voxelsFilled << std::endl;
 
 		// If the robot has no cells, it doesn't exist, and thus is immediately assigned the minimum fitness. 
-		if (voxelsFilled == 0)
+		if (voxelsFilled == 0 or voxelsFilled < (int)round(NEAT::Globals::getSingleton()->getParameterValue("MaxTotalVoxels") * NEAT::Globals::getSingleton()->getParameterValue("MinPercentVoxelsFilled")))
 		{
-			std::cout << "no voxels filled, returning minimum fitness." << std::endl;
+			std::cout << "Only "<< voxelsFilled <<" voxels filled (" << (int)round(NEAT::Globals::getSingleton()->getParameterValue("MaxTotalVoxels") * NEAT::Globals::getSingleton()->getParameterValue("MinPercentVoxelsFilled")) << " required), returning minimum fitness." << std::endl;
 			return fitness;
 		}
 
@@ -296,9 +301,9 @@ namespace HCUBE
 			{
 				sleep(0.01);
 				// if the file hasn't been found in a long period of time, voxelyze may have become unstable and crashed, kill the simulations and assign minimum fitness so the whole program doesn't crash/hang.  
-				if ( double(end-start)/CLOCKS_PER_SEC > 120.0) // amount of time set arbitrarily.  For a more scalable value, make function of the number of voxels
+				if ( double(end-start)/CLOCKS_PER_SEC > 300.0) // amount of time set arbitrarily.  For a more scalable value, make function of the number of voxels
 				{
-					cout << "voxelyze hung after 120 seconds... assigning fitness of 0.000001"<<endl;
+					cout << "voxelyze hung after 300 seconds... assigning fitness of 0.000001"<<endl;
 
 					// find process and kill it.  Please optimize this better.
 					int exitCode3 = std::system("ps axu > /tmp/HnPsFile.txt"); // write system processes to file
@@ -385,9 +390,10 @@ namespace HCUBE
 		individual->setOrigFitness(origFitness);
 
 		// adjust fitness by the penalty factor
-		fitness = fitness * calculateFitnessAdjustment( matrixForVoxelyze );
-					
-		// if fitness is not greater than zero or is an absurdly large number, something probably went wrong.  Just assign minimum fitness and exit the evaluation.
+
+		// fitness = fitness * pow(1.0 - calculateFitnessAdjustment( matrixForVoxelyze )/NEAT::Globals::getSingleton()->getParameterValue("MaxTotalVoxels"),NEAT::Globals::getSingleton()->getParameterValue("PenaltyExp"));
+		fitness2 = calculateFitnessAdjustment(matrixForVoxelyze) / NEAT::Globals::getSingleton()->getParameterValue("MaxTotalVoxels");
+		individual->setFitness2(fitness2);
 
 		if (fitness < 0.000001) fitness = 0.000001;
 		if (fitness > 10000) fitness = 0.000001;
@@ -399,7 +405,8 @@ namespace HCUBE
 
 		cout << "Adjusted Fitness: " << fitness << endl;
 
-		return fitness; 
+		// return fitness; 
+		return origFitness; 
     }
 	
 
@@ -411,11 +418,19 @@ namespace HCUBE
     	char thisGenBuffer [50];
 		sprintf(thisGenBuffer, "%04i", genNum);
 		std::ostringstream mkGenDir;
+		std::ostringstream mkCPPNDir;
 		if (genNum < NEAT::Globals::getSingleton()->getParameterValue("AlsoSaveFirstGens") or genNum % (int)NEAT::Globals::getSingleton()->getParameterValue("SaveVXAEvery")==0)
 		{
 			mkGenDir << "mkdir -p Gen_" << thisGenBuffer;
+			int exitCode5 = std::system(mkGenDir.str().c_str());
+			// PRINT(thisGenBuffer);
+		}
+		if (int(NEAT::Globals::getSingleton()->getParameterValue("PrintCPPNs")))
+		{
+			mkCPPNDir << "mkdir -p CPPNs/Gen_" << thisGenBuffer;
+			int exitCode6 = std::system(mkCPPNDir.str().c_str());
 		}			
-		int exitCode5 = std::system(mkGenDir.str().c_str());
+		// PRINT(mkGenDir.str().c_str());
 		
 		// =========================================================================================================
 		// process each individual within the group
@@ -446,9 +461,11 @@ namespace HCUBE
 				printf("fitness: %f\n", fitness);	
 			#endif
 
-			// cout << "Individual Evaluation complete!\n";
-			cout << "Original Fitness: " << individual->getOrigFitness() << endl;
-			cout << "Adjusted Fitness: " << fitness << endl;
+			cout << "Distance: " << fitness << endl;
+			cout << "\% Voxels: " << individual->getFitness2() << endl;
+			// PRINT(fitness);
+			// PRINT(individual->getFitness2());
+			// cout << "Adjusted Fitness: " << fitness << endl;
 	  
 			individual->reward(fitness);	
 
@@ -481,12 +498,12 @@ namespace HCUBE
 
 	    char genBuffer[100];
 	    sprintf(genBuffer, "%04i", genNum);
-	    char adjFitBuffer[100];
-		sprintf(adjFitBuffer, "%.8lf", fitness);
-		char origFitBuffer[100];
-		sprintf(origFitBuffer, "%.8lf", origFitness);
+	    char fit1Buffer[100];
+		sprintf(fit1Buffer, "%.8lf", fitness);
+		char fit2Buffer[100];
+		sprintf(fit2Buffer, "%.8lf", individual->getFitness2());
 
-		cppnFileName << "CPPNs/cppnFor--Gen_" << genBuffer << "--adjFit_" << adjFitBuffer << "--origFit_" << origFitBuffer << "--md5_" << individual->getThismd5() << ".txt";
+		cppnFileName << "CPPNs/Gen_" << genBuffer << "/cppnFor--Gen_" << genBuffer << "--distFit_" << fit1Buffer << "--voxelFit_" << fit2Buffer << "--md5_" << individual->getThismd5() << ".txt";
 		ofstream network_file;        
 		network_file.open (cppnFileName.str().c_str(), ios::trunc );
 
@@ -633,7 +650,8 @@ namespace HCUBE
 			}
 		}
 
-		return pow(1.0 - penaltyCounter/NEAT::Globals::getSingleton()->getParameterValue("MaxTotalVoxels"),NEAT::Globals::getSingleton()->getParameterValue("PenaltyExp"));
+		// return pow(1.0 - penaltyCounter/NEAT::Globals::getSingleton()->getParameterValue("MaxTotalVoxels"),NEAT::Globals::getSingleton()->getParameterValue("PenaltyExp"));
+		return (double)penaltyCounter;
 	}
 
 	void SoftbotsExperiment::moveFitnessFile( shared_ptr<const NEAT::GeneticIndividual> individual )
@@ -643,10 +661,10 @@ namespace HCUBE
 
 		char genBuffer[100];
 		sprintf(genBuffer, "%04i", genNum);
-		char adjFitBuffer[100];
-		sprintf(adjFitBuffer, "%.8lf", fitness);
-		char origFitBuffer[100];
-		sprintf(origFitBuffer, "%.8lf", origFitness);
+	    char fit1Buffer[100];
+		sprintf(fit1Buffer, "%.8lf", fitness);
+		char fit2Buffer[100];
+		sprintf(fit2Buffer, "%.8lf", individual->getFitness2());
 
 		if (NEAT::Globals::getSingleton()->getParameterValue("SaveAllChampVXAs") and fitness > getBestFitnessThisGen())
 		{
@@ -663,8 +681,8 @@ namespace HCUBE
 								<< "champVXAs"
 								<< "/" << NEAT::Globals::getSingleton()->getOutputFilePrefix() 
 								<< "--Gen_" << genBuffer
-								<< "--adjFit_" << adjFitBuffer
-								<< "--origFit_" << origFitBuffer
+								<< "--distFit_" << fit1Buffer
+								<< "--voxelFit_" << fit2Buffer
 								<< "--md5_" << individual->getThismd5()
 								<< ".vxa";
 
@@ -681,8 +699,8 @@ namespace HCUBE
 								<< "Gen_" << genBuffer 
 								<< "/" << NEAT::Globals::getSingleton()->getOutputFilePrefix() 
 								<< "--Gen_" << genBuffer
-								<< "--adjFit_" << adjFitBuffer
-								<< "--origFit_" << origFitBuffer
+								<< "--distFit_" << fit1Buffer
+								<< "--voxelFit_" << fit2Buffer
 								<< "--md5_" << individual->getThismd5()
 								<< ".vxa";
 
@@ -747,6 +765,7 @@ namespace HCUBE
 <StopCondition>\n\
 <StopConditionType>2</StopConditionType>\n\
 <StopConditionValue>" << float(NEAT::Globals::getSingleton()->getParameterValue("NumActuationCycles"))/float(NEAT::Globals::getSingleton()->getParameterValue("ActuationsPerSecond")) /* from <TempPeriod> */ << "</StopConditionValue>\n\
+<InitCmTime>" << float(NEAT::Globals::getSingleton()->getParameterValue("InitCmCycles"))/float(NEAT::Globals::getSingleton()->getParameterValue("ActuationsPerSecond")) /* from <TempPeriod> */ << "</InitCmTime>\n\
 </StopCondition>\n\
 <GA>\n\
 <WriteFitnessFile>1</WriteFitnessFile>\n\
