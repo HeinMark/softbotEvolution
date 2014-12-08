@@ -12,8 +12,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/zlib.dir/trees.o"
   "CMakeFiles/zlib.dir/uncompr.o"
   "CMakeFiles/zlib.dir/zutil.o"
-  "/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/out/libzlib.pdb"
-  "/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/out/libzlib.so"
+  "out/libzlib.pdb"
+  "out/libzlib.so"
 )
 
 # Per-language clean rules from dependency scanning.

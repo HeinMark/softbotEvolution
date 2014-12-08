@@ -1,0 +1,75 @@
+num links:44
+num nodes:17
+ is node number: 16
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : 0.917068
+0->6 : 0.0353117
+0->7 : -0.254183
+0->8 : -0.0888341
+0->9 : -2.63592
+0->10 : -0.169667
+1->5 : -0.517274
+1->6 : 1.74203
+1->7 : 2.32358
+1->8 : 1.61129
+1->9 : 1.08009
+1->10 : 0.0133209
+2->5 : 0.152488
+2->6 : 0
+2->7 : -0.189241
+2->8 : 0.242577
+2->9 : 2.12861
+2->10 : -0.895137
+3->5 : 0.429506
+3->6 : -0.463462
+3->7 : -1.4311
+3->8 : 0.239141
+3->9 : 2.70517
+3->10 : 0
+4->5 : 0.909716
+4->6 : -0.103689
+4->7 : 1.27274
+4->8 : 0
+4->9 : -1.62119
+4->10 : 0.566797
+4->11 : -0.225463
+11->5 : -0.0493265
+1->11 : -1.27079
+3->12 : 0.677215
+12->6 : -0.139098
+3->13 : -0.0540276
+13->5 : 0.131838
+3->14 : 0.23897
+14->6 : -0.478206
+11->8 : -0.7869
+4->15 : 0.724876
+15->6 : -0.0387351
+2->16 : 1.15293
+16->10 : -0.242183
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_SQUARE
+ activation function 12: ACTIVATION_FUNCTION_SIN
+ activation function 13: ACTIVATION_FUNCTION_GAUSSIAN
+ activation function 14: ACTIVATION_FUNCTION_SIGMOID
+ activation function 15: ACTIVATION_FUNCTION_SIN
+ activation function 16: ACTIVATION_FUNCTION_SQUARE

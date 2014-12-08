@@ -31,14 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT
+CMAKE_SOURCE_DIR = /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT
+CMAKE_BINARY_DIR = /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT
 
 # Include any dependencies generated for this target.
 include Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/depend.make
@@ -51,17 +51,17 @@ include Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.o: Hypercube_NEAT/src/HCUBE_Defines.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_Defines.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_Defines.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_Defines.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_Defines.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_Defines.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_Defines.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.o.requires
@@ -74,17 +74,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.o.provid
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ExperimentRun.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ExperimentRun.cpp.o: Hypercube_NEAT/src/HCUBE_ExperimentRun.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ExperimentRun.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ExperimentRun.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_ExperimentRun.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ExperimentRun.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_ExperimentRun.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ExperimentRun.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ExperimentRun.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_ExperimentRun.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ExperimentRun.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_ExperimentRun.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ExperimentRun.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ExperimentRun.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ExperimentRun.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_ExperimentRun.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ExperimentRun.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_ExperimentRun.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ExperimentRun.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ExperimentRun.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ExperimentRun.cpp.o.requires
@@ -97,17 +97,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ExperimentRun.cpp.o.
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_EvaluationSet.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_EvaluationSet.cpp.o: Hypercube_NEAT/src/HCUBE_EvaluationSet.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_EvaluationSet.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_EvaluationSet.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_EvaluationSet.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_EvaluationSet.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_EvaluationSet.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_EvaluationSet.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_EvaluationSet.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_EvaluationSet.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_EvaluationSet.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_EvaluationSet.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_EvaluationSet.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_EvaluationSet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_EvaluationSet.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_EvaluationSet.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_EvaluationSet.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_EvaluationSet.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_EvaluationSet.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_EvaluationSet.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_EvaluationSet.cpp.o.requires
@@ -120,17 +120,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_EvaluationSet.cpp.o.
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Array3D.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Array3D.cpp.o: Hypercube_NEAT/src/hiller/Array3D.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Array3D.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Array3D.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/Array3D.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Array3D.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/Array3D.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Array3D.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Array3D.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/Array3D.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Array3D.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/Array3D.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Array3D.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Array3D.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Array3D.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/Array3D.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Array3D.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/Array3D.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Array3D.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Array3D.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Array3D.cpp.o.requires
@@ -143,17 +143,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Array3D.cpp.o.provi
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/DigitalMatter.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/DigitalMatter.cpp.o: Hypercube_NEAT/src/hiller/DigitalMatter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/DigitalMatter.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/DigitalMatter.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/DigitalMatter.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/DigitalMatter.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/DigitalMatter.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/DigitalMatter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/DigitalMatter.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/DigitalMatter.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/DigitalMatter.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/DigitalMatter.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/DigitalMatter.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/DigitalMatter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/DigitalMatter.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/DigitalMatter.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/DigitalMatter.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/DigitalMatter.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/DigitalMatter.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/DigitalMatter.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/DigitalMatter.cpp.o.requires
@@ -166,17 +166,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/DigitalMatter.cpp.o
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/MarchCube.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/MarchCube.cpp.o: Hypercube_NEAT/src/hiller/MarchCube.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/MarchCube.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/MarchCube.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/MarchCube.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/MarchCube.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/MarchCube.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/MarchCube.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/MarchCube.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/MarchCube.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/MarchCube.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/MarchCube.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/MarchCube.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/MarchCube.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/MarchCube.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/MarchCube.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/MarchCube.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/MarchCube.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/MarchCube.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/MarchCube.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/MarchCube.cpp.o.requires
@@ -189,17 +189,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/MarchCube.cpp.o.pro
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Mesh.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Mesh.cpp.o: Hypercube_NEAT/src/hiller/Mesh.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Mesh.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Mesh.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/Mesh.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Mesh.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/Mesh.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Mesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Mesh.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/Mesh.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Mesh.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/Mesh.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Mesh.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Mesh.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/Mesh.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Mesh.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/Mesh.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Mesh.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Mesh.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Mesh.cpp.o.requires
@@ -212,17 +212,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Mesh.cpp.o.provides
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/XML_Rip.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/XML_Rip.cpp.o: Hypercube_NEAT/src/hiller/XML_Rip.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/XML_Rip.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/XML_Rip.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/XML_Rip.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/XML_Rip.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/XML_Rip.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/XML_Rip.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/XML_Rip.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/XML_Rip.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/XML_Rip.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/XML_Rip.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/XML_Rip.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/XML_Rip.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/XML_Rip.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/XML_Rip.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/XML_Rip.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/hiller/XML_Rip.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/XML_Rip.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/XML_Rip.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/XML_Rip.cpp.o.requires
@@ -235,17 +235,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/XML_Rip.cpp.o.provi
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterExperiment.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterExperiment.cpp.o: Hypercube_NEAT/src/Experiments/HCUBE_FindClusterExperiment.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterExperiment.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterExperiment.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_FindClusterExperiment.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterExperiment.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_FindClusterExperiment.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterExperiment.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterExperiment.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_FindClusterExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterExperiment.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_FindClusterExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterExperiment.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterExperiment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterExperiment.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_FindClusterExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterExperiment.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_FindClusterExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterExperiment.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterExperiment.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterExperiment.cpp.o.requires
@@ -258,17 +258,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClus
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp.o: Hypercube_NEAT/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp.o.requires
@@ -281,17 +281,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClus
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment.cpp.o: Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment.cpp.o.requires
@@ -304,17 +304,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwing
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp.o: Hypercube_NEAT/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp.o.requires
@@ -327,17 +327,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirro
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp.o: Hypercube_NEAT/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp.o.requires
@@ -350,17 +350,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirro
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp.o: Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp.o.requires
@@ -373,17 +373,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwing
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp.o: Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp.o.requires
@@ -396,17 +396,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwing
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsExperiment.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsExperiment.cpp.o: Hypercube_NEAT/src/Experiments/HCUBE_TargetWeightsExperiment.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsExperiment.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsExperiment.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_TargetWeightsExperiment.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsExperiment.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_TargetWeightsExperiment.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsExperiment.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsExperiment.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_TargetWeightsExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsExperiment.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_TargetWeightsExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsExperiment.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsExperiment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsExperiment.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_TargetWeightsExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsExperiment.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_TargetWeightsExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsExperiment.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsExperiment.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsExperiment.cpp.o.requires
@@ -419,17 +419,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWe
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp.o: Hypercube_NEAT/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp.o.requires
@@ -442,17 +442,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWe
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_ShapesExperiment.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_ShapesExperiment.cpp.o: Hypercube_NEAT/src/Experiments/HCUBE_ShapesExperiment.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_ShapesExperiment.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_ShapesExperiment.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_ShapesExperiment.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_ShapesExperiment.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_ShapesExperiment.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_ShapesExperiment.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_ShapesExperiment.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_ShapesExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_ShapesExperiment.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_ShapesExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_ShapesExperiment.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_ShapesExperiment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_ShapesExperiment.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_ShapesExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_ShapesExperiment.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_ShapesExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_ShapesExperiment.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_ShapesExperiment.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_ShapesExperiment.cpp.o.requires
@@ -465,17 +465,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_ShapesEx
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SoftbotsExperiment.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SoftbotsExperiment.cpp.o: Hypercube_NEAT/src/Experiments/HCUBE_SoftbotsExperiment.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SoftbotsExperiment.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SoftbotsExperiment.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_SoftbotsExperiment.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SoftbotsExperiment.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_SoftbotsExperiment.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SoftbotsExperiment.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SoftbotsExperiment.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_SoftbotsExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SoftbotsExperiment.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_SoftbotsExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SoftbotsExperiment.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SoftbotsExperiment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SoftbotsExperiment.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_SoftbotsExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SoftbotsExperiment.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_SoftbotsExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SoftbotsExperiment.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SoftbotsExperiment.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SoftbotsExperiment.cpp.o.requires
@@ -488,17 +488,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Softbots
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SpiderRobotExperiment.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SpiderRobotExperiment.cpp.o: Hypercube_NEAT/src/Experiments/HCUBE_SpiderRobotExperiment.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SpiderRobotExperiment.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SpiderRobotExperiment.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_SpiderRobotExperiment.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SpiderRobotExperiment.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_SpiderRobotExperiment.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SpiderRobotExperiment.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SpiderRobotExperiment.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_SpiderRobotExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SpiderRobotExperiment.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_SpiderRobotExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SpiderRobotExperiment.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SpiderRobotExperiment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SpiderRobotExperiment.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_SpiderRobotExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SpiderRobotExperiment.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_SpiderRobotExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SpiderRobotExperiment.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SpiderRobotExperiment.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SpiderRobotExperiment.cpp.o.requires
@@ -511,17 +511,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SpiderRo
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-FTNEAT.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-FTNEAT.cpp.o: Hypercube_NEAT/src/Experiments/HCUBE_Retina-FTNEAT.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-FTNEAT.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-FTNEAT.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_Retina-FTNEAT.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-FTNEAT.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_Retina-FTNEAT.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-FTNEAT.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-FTNEAT.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_Retina-FTNEAT.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-FTNEAT.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_Retina-FTNEAT.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-FTNEAT.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-FTNEAT.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-FTNEAT.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_Retina-FTNEAT.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-FTNEAT.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_Retina-FTNEAT.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-FTNEAT.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-FTNEAT.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-FTNEAT.cpp.o.requires
@@ -534,17 +534,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-F
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaExperiment.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaExperiment.cpp.o: Hypercube_NEAT/src/Experiments/HCUBE_RetinaExperiment.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaExperiment.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaExperiment.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_RetinaExperiment.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaExperiment.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_RetinaExperiment.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaExperiment.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaExperiment.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_RetinaExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaExperiment.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_RetinaExperiment.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaExperiment.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaExperiment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaExperiment.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_RetinaExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaExperiment.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_RetinaExperiment.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaExperiment.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaExperiment.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaExperiment.cpp.o.requires
@@ -557,17 +557,17 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaEx
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ODE.cpp.o: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/flags.make
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ODE.cpp.o: Hypercube_NEAT/src/HCUBE_ODE.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ODE.cpp.o"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ODE.cpp.o -c /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_ODE.cpp
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ODE.cpp.o -c /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_ODE.cpp
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ODE.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ODE.cpp.i"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_ODE.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ODE.cpp.i
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_ODE.cpp > CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ODE.cpp.i
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ODE.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ODE.cpp.s"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_ODE.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ODE.cpp.s
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_ODE.cpp -o CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ODE.cpp.s
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ODE.cpp.o.requires:
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ODE.cpp.o.requires
@@ -607,37 +607,37 @@ Hypercube_NEAT_Base_OBJECTS = \
 # External object files for target Hypercube_NEAT_Base
 Hypercube_NEAT_Base_EXTERNAL_OBJECTS =
 
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ExperimentRun.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_EvaluationSet.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Array3D.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/DigitalMatter.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/MarchCube.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Mesh.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/XML_Rip.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterExperiment.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsExperiment.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_ShapesExperiment.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SoftbotsExperiment.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SpiderRobotExperiment.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-FTNEAT.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaExperiment.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ODE.cpp.o
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/build.make
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a"
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && $(CMAKE_COMMAND) -P CMakeFiles/Hypercube_NEAT_Base.dir/cmake_clean_target.cmake
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Hypercube_NEAT_Base.dir/link.txt --verbose=$(VERBOSE)
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ExperimentRun.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_EvaluationSet.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Array3D.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/DigitalMatter.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/MarchCube.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/Mesh.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/hiller/XML_Rip.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterExperiment.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_FindClusterNoGeomExperiment.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2Experiment.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_BitMirroringV2NoGeomExperiment.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-Pneat.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_LegSwingExperiment-NEAT.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsExperiment.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_TargetWeightsNoGeomExperiment.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_ShapesExperiment.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SoftbotsExperiment.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_SpiderRobotExperiment.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-FTNEAT.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaExperiment.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ODE.cpp.o
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/build.make
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library /home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a"
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && $(CMAKE_COMMAND) -P CMakeFiles/Hypercube_NEAT_Base.dir/cmake_clean_target.cmake
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Hypercube_NEAT_Base.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/build: /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a
+Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/build: /home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/build
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/requires: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_Defines.cpp.o.requires
@@ -666,10 +666,10 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/requires: Hypercube_NEAT/CMake
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/requires
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/clean:
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT && $(CMAKE_COMMAND) -P CMakeFiles/Hypercube_NEAT_Base.dir/cmake_clean.cmake
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT && $(CMAKE_COMMAND) -P CMakeFiles/Hypercube_NEAT_Base.dir/cmake_clean.cmake
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/clean
 
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/depend:
-	cd /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/depend
 

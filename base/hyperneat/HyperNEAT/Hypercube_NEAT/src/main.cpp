@@ -64,7 +64,6 @@ int HyperNEAT_main(int argc,char **argv)
 			   else
 				   cout << "Using the following parameter file: " << paramFileName << endl;
 		   }
-		
 		if (argc<=1)
 		{
 			cout << "You must pass the parameters and the output file as command "
@@ -75,7 +74,7 @@ int HyperNEAT_main(int argc,char **argv)
 			
 			//Run the post-hoc analysis on every generation
 			HCUBE::ExperimentRun experimentRun;
-			
+
 			experimentRun.setupExperimentInProgress(string(argv[1]),"");
 			
 			int numGenerations = experimentRun.getPopulation()->getGenerationCount();
@@ -106,20 +105,8 @@ int HyperNEAT_main(int argc,char **argv)
 						continue;
 					}
 					
-					shared_ptr<NEAT::GeneticIndividual> indiv =
-					shared_ptr<NEAT::GeneticIndividual>(
-																							new NEAT::GeneticIndividual(
-																																					*(experimentRun.getIndividual(generation,0).get())
-																																					)
-																							);
+					shared_ptr<NEAT::GeneticIndividual> indiv = shared_ptr<NEAT::GeneticIndividual>(new NEAT::GeneticIndividual(*(experimentRun.getIndividual(generation,0).get())));
 					
-					//CREATE_PAUSE(string("Error!: ")+toString(__LINE__));
-					
-					//cout << "Beginning post-hoc evaluation " << (generation+1) << "/" << numGenerations << "...";
-					//experiment->processIndividualPostHoc(indiv);
-					//cout << "done!\n";
-					
-					//CREATE_PAUSE(string("Error!: ")+toString(__LINE__));
 #ifndef PRINT_GENCHAMPFITNESSVIAPOSTHOCEVAL
 					if (indiv->getUserData())
 					{
@@ -324,6 +311,11 @@ int HyperNEAT_main(int argc,char **argv)
 		{
 			cout << "Seeding, so decrement all gen counters by one. " << endl;
 			NEAT::Globals::getSingleton()->setParameterValue("SeedingSoDecrementByOne", 1.0);			
+		}
+		if(commandLineParser.HasSwitch("-P"))
+		{
+			int _populationNumber = atoi(commandLineParser.GetSafeArgument("-P",0,"0").c_str());
+			NEAT::Globals::getSingleton()->setParameterValue("PopulationNumber", _populationNumber);			
 		}
 			
 		if(commandLineParser.HasSwitch("-R"))

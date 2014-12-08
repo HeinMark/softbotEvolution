@@ -1,8 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vFEAInfo.ui'
 **
-** Created: Mon Aug 25 22:49:53 2014
-**      by: Qt User Interface Compiler version 4.8.1
+** Created by: Qt User Interface Compiler version 5.2.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -11,19 +10,19 @@
 #define UI_VFEAINFO_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QComboBox>
-#include <QtGui/QGroupBox>
-#include <QtGui/QHBoxLayout>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QPushButton>
-#include <QtGui/QRadioButton>
-#include <QtGui/QSlider>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QWidget>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QGroupBox>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QRadioButton>
+#include <QtWidgets/QSlider>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -57,19 +56,19 @@ public:
     void setupUi(QWidget *FEAInfoDlg)
     {
         if (FEAInfoDlg->objectName().isEmpty())
-            FEAInfoDlg->setObjectName(QString::fromUtf8("FEAInfoDlg"));
+            FEAInfoDlg->setObjectName(QStringLiteral("FEAInfoDlg"));
         FEAInfoDlg->resize(188, 384);
         verticalLayout_4 = new QVBoxLayout(FEAInfoDlg);
-        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
+        verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
         horizontalLayout_3 = new QHBoxLayout();
-        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
         ViewTypeCombo = new QComboBox(FEAInfoDlg);
-        ViewTypeCombo->setObjectName(QString::fromUtf8("ViewTypeCombo"));
+        ViewTypeCombo->setObjectName(QStringLiteral("ViewTypeCombo"));
 
         horizontalLayout_3->addWidget(ViewTypeCombo);
 
         ViewTypeLabel = new QLabel(FEAInfoDlg);
-        ViewTypeLabel->setObjectName(QString::fromUtf8("ViewTypeLabel"));
+        ViewTypeLabel->setObjectName(QStringLiteral("ViewTypeLabel"));
 
         horizontalLayout_3->addWidget(ViewTypeLabel);
 
@@ -77,11 +76,11 @@ public:
         verticalLayout_4->addLayout(horizontalLayout_3);
 
         horizontalLayout_2 = new QHBoxLayout();
-        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         verticalLayout_3 = new QVBoxLayout();
-        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
         DefSlider = new QSlider(FEAInfoDlg);
-        DefSlider->setObjectName(QString::fromUtf8("DefSlider"));
+        DefSlider->setObjectName(QStringLiteral("DefSlider"));
         DefSlider->setMaximum(1000);
         DefSlider->setSingleStep(10);
         DefSlider->setPageStep(100);
@@ -90,7 +89,7 @@ public:
         verticalLayout_3->addWidget(DefSlider);
 
         IsoThreshSlider = new QSlider(FEAInfoDlg);
-        IsoThreshSlider->setObjectName(QString::fromUtf8("IsoThreshSlider"));
+        IsoThreshSlider->setObjectName(QStringLiteral("IsoThreshSlider"));
         IsoThreshSlider->setMaximum(1000);
         IsoThreshSlider->setSingleStep(10);
         IsoThreshSlider->setPageStep(100);
@@ -99,7 +98,7 @@ public:
         verticalLayout_3->addWidget(IsoThreshSlider);
 
         SectionSlider = new QSlider(FEAInfoDlg);
-        SectionSlider->setObjectName(QString::fromUtf8("SectionSlider"));
+        SectionSlider->setObjectName(QStringLiteral("SectionSlider"));
         SectionSlider->setMaximum(1000);
         SectionSlider->setSingleStep(10);
         SectionSlider->setPageStep(100);
@@ -111,19 +110,19 @@ public:
         horizontalLayout_2->addLayout(verticalLayout_3);
 
         verticalLayout_2 = new QVBoxLayout();
-        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         DefLabel = new QLabel(FEAInfoDlg);
-        DefLabel->setObjectName(QString::fromUtf8("DefLabel"));
+        DefLabel->setObjectName(QStringLiteral("DefLabel"));
 
         verticalLayout_2->addWidget(DefLabel);
 
         IsoThreshLabel = new QLabel(FEAInfoDlg);
-        IsoThreshLabel->setObjectName(QString::fromUtf8("IsoThreshLabel"));
+        IsoThreshLabel->setObjectName(QStringLiteral("IsoThreshLabel"));
 
         verticalLayout_2->addWidget(IsoThreshLabel);
 
         SectionLabel = new QLabel(FEAInfoDlg);
-        SectionLabel->setObjectName(QString::fromUtf8("SectionLabel"));
+        SectionLabel->setObjectName(QStringLiteral("SectionLabel"));
 
         verticalLayout_2->addWidget(SectionLabel);
 
@@ -134,28 +133,28 @@ public:
         verticalLayout_4->addLayout(horizontalLayout_2);
 
         DirGroup = new QGroupBox(FEAInfoDlg);
-        DirGroup->setObjectName(QString::fromUtf8("DirGroup"));
+        DirGroup->setObjectName(QStringLiteral("DirGroup"));
         verticalLayout = new QVBoxLayout(DirGroup);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         DirMaxRadio = new QRadioButton(DirGroup);
-        DirMaxRadio->setObjectName(QString::fromUtf8("DirMaxRadio"));
+        DirMaxRadio->setObjectName(QStringLiteral("DirMaxRadio"));
 
         horizontalLayout->addWidget(DirMaxRadio);
 
         DirXRadio = new QRadioButton(DirGroup);
-        DirXRadio->setObjectName(QString::fromUtf8("DirXRadio"));
+        DirXRadio->setObjectName(QStringLiteral("DirXRadio"));
 
         horizontalLayout->addWidget(DirXRadio);
 
         DirYRadio = new QRadioButton(DirGroup);
-        DirYRadio->setObjectName(QString::fromUtf8("DirYRadio"));
+        DirYRadio->setObjectName(QStringLiteral("DirYRadio"));
 
         horizontalLayout->addWidget(DirYRadio);
 
         DirZRadio = new QRadioButton(DirGroup);
-        DirZRadio->setObjectName(QString::fromUtf8("DirZRadio"));
+        DirZRadio->setObjectName(QStringLiteral("DirZRadio"));
 
         horizontalLayout->addWidget(DirZRadio);
 
@@ -166,7 +165,7 @@ public:
         verticalLayout_4->addWidget(DirGroup);
 
         FEAInfoLabel = new QLabel(FEAInfoDlg);
-        FEAInfoLabel->setObjectName(QString::fromUtf8("FEAInfoLabel"));
+        FEAInfoLabel->setObjectName(QStringLiteral("FEAInfoLabel"));
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -178,9 +177,9 @@ public:
         verticalLayout_4->addWidget(FEAInfoLabel);
 
         horizontalLayout_4 = new QHBoxLayout();
-        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
+        horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
         DoneButton = new QPushButton(FEAInfoDlg);
-        DoneButton->setObjectName(QString::fromUtf8("DoneButton"));
+        DoneButton->setObjectName(QStringLiteral("DoneButton"));
 
         horizontalLayout_4->addWidget(DoneButton);
 
@@ -195,18 +194,18 @@ public:
 
     void retranslateUi(QWidget *FEAInfoDlg)
     {
-        FEAInfoDlg->setWindowTitle(QApplication::translate("FEAInfoDlg", "FEA Info", 0, QApplication::UnicodeUTF8));
-        ViewTypeLabel->setText(QApplication::translate("FEAInfoDlg", "View Mode", 0, QApplication::UnicodeUTF8));
-        DefLabel->setText(QApplication::translate("FEAInfoDlg", "Deflection", 0, QApplication::UnicodeUTF8));
-        IsoThreshLabel->setText(QApplication::translate("FEAInfoDlg", "Iso Threshhold", 0, QApplication::UnicodeUTF8));
-        SectionLabel->setText(QApplication::translate("FEAInfoDlg", "Section Height", 0, QApplication::UnicodeUTF8));
-        DirGroup->setTitle(QApplication::translate("FEAInfoDlg", "View Component", 0, QApplication::UnicodeUTF8));
-        DirMaxRadio->setText(QApplication::translate("FEAInfoDlg", "Max", 0, QApplication::UnicodeUTF8));
-        DirXRadio->setText(QApplication::translate("FEAInfoDlg", "X", 0, QApplication::UnicodeUTF8));
-        DirYRadio->setText(QApplication::translate("FEAInfoDlg", "Y", 0, QApplication::UnicodeUTF8));
-        DirZRadio->setText(QApplication::translate("FEAInfoDlg", "Z", 0, QApplication::UnicodeUTF8));
-        FEAInfoLabel->setText(QApplication::translate("FEAInfoDlg", "FEA Info", 0, QApplication::UnicodeUTF8));
-        DoneButton->setText(QApplication::translate("FEAInfoDlg", "Finished Analyzing", 0, QApplication::UnicodeUTF8));
+        FEAInfoDlg->setWindowTitle(QApplication::translate("FEAInfoDlg", "FEA Info", 0));
+        ViewTypeLabel->setText(QApplication::translate("FEAInfoDlg", "View Mode", 0));
+        DefLabel->setText(QApplication::translate("FEAInfoDlg", "Deflection", 0));
+        IsoThreshLabel->setText(QApplication::translate("FEAInfoDlg", "Iso Threshhold", 0));
+        SectionLabel->setText(QApplication::translate("FEAInfoDlg", "Section Height", 0));
+        DirGroup->setTitle(QApplication::translate("FEAInfoDlg", "View Component", 0));
+        DirMaxRadio->setText(QApplication::translate("FEAInfoDlg", "Max", 0));
+        DirXRadio->setText(QApplication::translate("FEAInfoDlg", "X", 0));
+        DirYRadio->setText(QApplication::translate("FEAInfoDlg", "Y", 0));
+        DirZRadio->setText(QApplication::translate("FEAInfoDlg", "Z", 0));
+        FEAInfoLabel->setText(QApplication::translate("FEAInfoDlg", "FEA Info", 0));
+        DoneButton->setText(QApplication::translate("FEAInfoDlg", "Finished Analyzing", 0));
     } // retranslateUi
 
 };

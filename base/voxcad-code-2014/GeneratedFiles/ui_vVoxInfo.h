@@ -1,8 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'vVoxInfo.ui'
 **
-** Created: Mon Aug 25 22:49:53 2014
-**      by: Qt User Interface Compiler version 4.8.1
+** Created by: Qt User Interface Compiler version 5.2.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -11,14 +10,14 @@
 #define UI_VVOXINFO_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QAction>
-#include <QtGui/QApplication>
-#include <QtGui/QButtonGroup>
-#include <QtGui/QHeaderView>
-#include <QtGui/QLabel>
-#include <QtGui/QScrollArea>
-#include <QtGui/QVBoxLayout>
-#include <QtGui/QWidget>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QScrollArea>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -34,23 +33,23 @@ public:
     void setupUi(QWidget *VoxInfoDialog)
     {
         if (VoxInfoDialog->objectName().isEmpty())
-            VoxInfoDialog->setObjectName(QString::fromUtf8("VoxInfoDialog"));
+            VoxInfoDialog->setObjectName(QStringLiteral("VoxInfoDialog"));
         VoxInfoDialog->resize(252, 201);
         verticalLayout = new QVBoxLayout(VoxInfoDialog);
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         InfoScrollArea = new QScrollArea(VoxInfoDialog);
-        InfoScrollArea->setObjectName(QString::fromUtf8("InfoScrollArea"));
+        InfoScrollArea->setObjectName(QStringLiteral("InfoScrollArea"));
         InfoScrollArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
         InfoScrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
-        scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
+        scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
         scrollAreaWidgetContents->setGeometry(QRect(0, 0, 250, 199));
         verticalLayout_2 = new QVBoxLayout(scrollAreaWidgetContents);
         verticalLayout_2->setContentsMargins(3, 3, 3, 3);
-        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         InfoLabel = new QLabel(scrollAreaWidgetContents);
-        InfoLabel->setObjectName(QString::fromUtf8("InfoLabel"));
+        InfoLabel->setObjectName(QStringLiteral("InfoLabel"));
         InfoLabel->setLineWidth(0);
         InfoLabel->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
         InfoLabel->setWordWrap(true);
@@ -70,8 +69,8 @@ public:
 
     void retranslateUi(QWidget *VoxInfoDialog)
     {
-        VoxInfoDialog->setWindowTitle(QApplication::translate("VoxInfoDialog", "Voxel Info", 0, QApplication::UnicodeUTF8));
-        InfoLabel->setText(QApplication::translate("VoxInfoDialog", "Voxel: Info", 0, QApplication::UnicodeUTF8));
+        VoxInfoDialog->setWindowTitle(QApplication::translate("VoxInfoDialog", "Voxel Info", 0));
+        InfoLabel->setText(QApplication::translate("VoxInfoDialog", "Voxel: Info", 0));
     } // retranslateUi
 
 };

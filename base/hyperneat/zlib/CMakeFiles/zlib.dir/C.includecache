@@ -6,97 +6,97 @@
 
 #IncludeRegexTransform: 
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/adler32.c
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/adler32.c
 zlib.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/zlib.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/zlib.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/compress.c
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/compress.c
 zlib.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/zlib.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/zlib.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/crc32.c
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/crc32.c
 stdio.h
 -
 zutil.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/zutil.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/zutil.h
 limits.h
 -
 crc32.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/crc32.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/crc32.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/crc32.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/crc32.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/deflate.c
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/deflate.c
 deflate.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/deflate.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/deflate.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/deflate.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/deflate.h
 zutil.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/zutil.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/zutil.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/gzio.c
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/gzio.c
 stdio.h
 -
 zutil.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/zutil.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/zutil.h
 stdarg.h
 -
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/infback.c
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/infback.c
 zutil.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/zutil.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/zutil.h
 inftrees.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inftrees.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inftrees.h
 inflate.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inflate.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inflate.h
 inffast.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inffast.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inffast.h
 inffixed.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inffixed.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inffixed.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inffast.c
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inffast.c
 zutil.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/zutil.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/zutil.h
 inftrees.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inftrees.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inftrees.h
 inflate.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inflate.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inflate.h
 inffast.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inffast.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inffast.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inffast.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inffast.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inffixed.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inffixed.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inflate.c
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inflate.c
 zutil.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/zutil.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/zutil.h
 inftrees.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inftrees.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inftrees.h
 inflate.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inflate.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inflate.h
 inffast.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inffast.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inffast.h
 inffixed.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inffixed.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inffixed.h
 stdio.h
 -
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inflate.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inflate.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inftrees.c
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inftrees.c
 zutil.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/zutil.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/zutil.h
 inftrees.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inftrees.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inftrees.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/inftrees.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/inftrees.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/minigzip.c
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/minigzip.c
 stdio.h
 -
 zlib.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/zlib.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/zlib.h
 string.h
 -
 stdlib.h
@@ -114,23 +114,23 @@ io.h
 unix.h
 -
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/trees.c
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/trees.c
 deflate.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/deflate.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/deflate.h
 ctype.h
 -
 trees.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/trees.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/trees.h
 stdio.h
 -
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/trees.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/trees.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/uncompr.c
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/uncompr.c
 zlib.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/zlib.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/zlib.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/zconf.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/zconf.h
 windows.h
 -
 sys/types.h
@@ -140,17 +140,17 @@ unistd.h
 unixio.h
 -
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/zlib.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/zlib.h
 zconf.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/zconf.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/zconf.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/zutil.c
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/zutil.c
 zutil.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/zutil.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/zutil.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/zutil.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/zutil.h
 zlib.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/zlib/zlib.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/zlib/zlib.h
 stddef.h
 -
 string.h

@@ -22,8 +22,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_Retina-FTNEAT.cpp.o"
   "CMakeFiles/Hypercube_NEAT_Base.dir/src/Experiments/HCUBE_RetinaExperiment.cpp.o"
   "CMakeFiles/Hypercube_NEAT_Base.dir/src/HCUBE_ODE.cpp.o"
-  "/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.pdb"
-  "/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a"
+  "/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.pdb"
+  "/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a"
 )
 
 # Per-language clean rules from dependency scanning.

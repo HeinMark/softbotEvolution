@@ -1,3 +1,3 @@
 FILE(REMOVE_RECURSE
-  "/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a"
+  "/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libHypercube_NEAT_Base.a"
 )

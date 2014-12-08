@@ -20,7 +20,7 @@ unixio.h
 zconf.h
 ../zlib/zconf.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/tinyxmldll/src/tinyxmldll.cpp
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/tinyxmldll/src/tinyxmldll.cpp
 ctype.h
 -
 sstream
@@ -28,21 +28,21 @@ sstream
 iostream
 -
 tinyxmldll.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/tinyxmldll/src/tinyxmldll.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/tinyxmldll/src/tinyxmldll.h
 zlib.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/tinyxmldll/src/zlib.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/tinyxmldll/src/zlib.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/tinyxmldll/src/tinyxmlerrordll.cpp
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/tinyxmldll/src/tinyxmlerrordll.cpp
 tinyxmldll.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/tinyxmldll/src/tinyxmldll.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/tinyxmldll/src/tinyxmldll.h
 
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/tinyxmldll/src/tinyxmlparserdll.cpp
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/tinyxmldll/src/tinyxmlparserdll.cpp
 ctype.h
 -
 stddef.h
 -
 tinyxmldll.h
-/home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/tinyxmldll/src/tinyxmldll.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/tinyxmldll/src/tinyxmldll.h
 windows.h
 -
 

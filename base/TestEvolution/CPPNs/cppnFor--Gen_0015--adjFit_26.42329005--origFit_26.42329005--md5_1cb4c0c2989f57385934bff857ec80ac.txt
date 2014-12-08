@@ -1,0 +1,75 @@
+num links:44
+num nodes:17
+ is node number: 16
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : 0.819055
+0->6 : -0.295685
+0->7 : 2.65035
+0->8 : -0.0140319
+0->9 : -3
+0->10 : -0.361068
+1->5 : -0.679545
+1->6 : 2.10796
+1->7 : 2.32992
+1->8 : 1.56953
+1->9 : 0.861308
+1->10 : -0.0157377
+2->5 : -0.620315
+2->6 : -2.34711
+2->7 : 0.135115
+2->8 : 0.414449
+2->9 : 0.358761
+2->10 : -1.29801
+3->5 : 0.853071
+3->6 : -0.623082
+3->7 : -1.7645
+3->8 : -0.228891
+3->9 : 3
+3->10 : 1.706
+4->5 : 0.987015
+4->6 : 0.0323783
+4->7 : 1.51912
+4->8 : -0.229272
+4->9 : -1.95375
+4->10 : 0.495105
+4->11 : 0.0339028
+11->5 : 0.393203
+1->11 : -1.15969
+3->12 : 0
+12->6 : -0.263906
+3->13 : 1.29868
+13->5 : 0.259911
+3->14 : -0.0265048
+14->6 : -0.39552
+11->8 : -0.850757
+4->15 : 0.671992
+15->6 : -0.1619
+2->16 : 1.30856
+16->10 : 0.0471328
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_SQUARE
+ activation function 12: ACTIVATION_FUNCTION_SIN
+ activation function 13: ACTIVATION_FUNCTION_GAUSSIAN
+ activation function 14: ACTIVATION_FUNCTION_SIGMOID
+ activation function 15: ACTIVATION_FUNCTION_SIN
+ activation function 16: ACTIVATION_FUNCTION_SQUARE

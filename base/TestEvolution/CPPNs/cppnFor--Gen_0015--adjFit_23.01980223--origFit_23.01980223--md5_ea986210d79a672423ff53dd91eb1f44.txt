@@ -1,0 +1,75 @@
+num links:44
+num nodes:17
+ is node number: 16
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : 1.12441
+0->6 : 0.0617828
+0->7 : 2.70849
+0->8 : 0.0801222
+0->9 : -2.985
+0->10 : -0.497747
+1->5 : -0.411178
+1->6 : 2.06733
+1->7 : 2.14444
+1->8 : 1.59308
+1->9 : 1.32872
+1->10 : 0.176528
+2->5 : -0.475319
+2->6 : -2.54922
+2->7 : 0.172238
+2->8 : 0.316746
+2->9 : 0.0338683
+2->10 : -1.62435
+3->5 : 0.700403
+3->6 : -0.501029
+3->7 : -1.72051
+3->8 : -0.118419
+3->9 : 2.41043
+3->10 : 1.52577
+4->5 : 1.35711
+4->6 : 0.0266261
+4->7 : 1.57416
+4->8 : -1.51542
+4->9 : -1.76288
+4->10 : 0.204626
+4->11 : 0.120616
+11->5 : 0.25191
+1->11 : -1.27539
+3->12 : 0.82281
+12->6 : -0.227753
+3->13 : 1.1677
+13->5 : 0.0527805
+3->14 : 0.135577
+14->6 : -0.511901
+11->8 : -0.983134
+4->15 : 0.619038
+15->6 : -0.248089
+2->16 : 1.30856
+16->10 : -0.138233
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_SQUARE
+ activation function 12: ACTIVATION_FUNCTION_SIN
+ activation function 13: ACTIVATION_FUNCTION_GAUSSIAN
+ activation function 14: ACTIVATION_FUNCTION_SIGMOID
+ activation function 15: ACTIVATION_FUNCTION_SIN
+ activation function 16: ACTIVATION_FUNCTION_SQUARE

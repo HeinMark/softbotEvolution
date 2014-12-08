@@ -223,7 +223,7 @@ namespace NEAT
         parameters.insert("BoundingBoxY", 0.0);
         parameters.insert("BoundingBoxZ", 0.0);
         parameters.insert("FitnessNormalizedBySize", 0.0);
-
+	parameters.insert("PopulationNumber", 1);
 
 		cacheParameters();
 

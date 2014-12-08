@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/NEAT/src/NEAT_Globals.cpp
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/NEAT/src/NEAT_Globals.cpp
 NEAT_Globals.h
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/NEAT/src/NEAT_Globals.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/NEAT/src/NEAT_Globals.h
 NEAT_GeneticNodeGene.h
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/NEAT/src/NEAT_GeneticNodeGene.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/NEAT/src/NEAT_GeneticNodeGene.h
 NEAT_GeneticLinkGene.h
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/NEAT/src/NEAT_GeneticLinkGene.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/NEAT/src/NEAT_GeneticLinkGene.h
 
 NEAT/include/NEAT_Defines.h
 NEAT_STL.h

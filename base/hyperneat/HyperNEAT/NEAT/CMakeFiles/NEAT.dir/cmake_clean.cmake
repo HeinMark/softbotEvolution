@@ -15,8 +15,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/NEAT.dir/src/NEAT_NetworkNode.cpp.o"
   "CMakeFiles/NEAT.dir/src/NEAT_Random.cpp.o"
   "CMakeFiles/NEAT.dir/src/cRandom.cc.o"
-  "/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libNEAT.pdb"
-  "/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/hyperneatLibs/libNEAT.so"
+  "/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libNEAT.pdb"
+  "/home/heinmr/Documents/softbotEvolution/base/hyperneat/hyperneatLibs/libNEAT.so"
 )
 
 # Per-language clean rules from dependency scanning.

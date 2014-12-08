@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_SoftbotsExperiment.cpp
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_SoftbotsExperiment.cpp
 Experiments/HCUBE_SoftbotsExperiment.h
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/Experiments/HCUBE_SoftbotsExperiment.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/Experiments/HCUBE_SoftbotsExperiment.h
 
 Hypercube_NEAT/../NEAT/include/NEAT.h
 NEAT_Globals.h

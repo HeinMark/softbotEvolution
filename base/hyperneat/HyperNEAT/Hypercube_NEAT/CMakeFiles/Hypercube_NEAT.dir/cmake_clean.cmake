@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/Hypercube_NEAT.dir/src/main.cpp.o"
-  "/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/out/Hypercube_NEAT.pdb"
-  "/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/out/Hypercube_NEAT"
+  "/home/heinmr/Documents/softbotEvolution/base/hyperneat/out/Hypercube_NEAT.pdb"
+  "/home/heinmr/Documents/softbotEvolution/base/hyperneat/out/Hypercube_NEAT"
 )
 
 # Per-language clean rules from dependency scanning.

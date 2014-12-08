@@ -1,8 +1,8 @@
-# Install script for directory: /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT
+# Install script for directory: /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/out")
+  SET(CMAKE_INSTALL_PREFIX "/home/heinmr/Documents/softbotEvolution/base/hyperneat/out")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

@@ -76,10 +76,14 @@ namespace HCUBE
         return population;
     }
 
+    // Creates a creature, runs a trial, and returns the fitness of the creature.
+    // Optimizations: md5 identification, so if there are multiple creatures being tested that have the same checksum (supposedly same phenotype),
+    // instead the program looks up the stored fitness for that creature.
     double SoftbotsExperiment::processEvaluation(shared_ptr<NEAT::GeneticIndividual> individual)
     {
 		fitness = 0.000001; // minimum fitness value (must be greater than zero)
-		individual->setOrigFitness(0.000001); // just record keeping, so that original fitness can record distnace after the actual fitness has been adjusted by penalties
+		individual->setOrigFitness(0.000001); 
+		// just record keeping, so that original fitness can record distnace after the actual fitness has been adjusted by penalties
 
 
 		// Create Phenotype from CPPN ===========================================================================================================================
@@ -216,35 +220,39 @@ namespace HCUBE
     	writeVoxelyzeFile(matrixForVoxelyze); 
 
 
-    	// Get md5sum of vxa file, and keep on record as archive, so that future individuals can have fitnesses looked up instead of evlaluated if they share the same phenotype
-    	FILE* pipe = popen("md5sum voxelyzeInputFromCPPN.vxa", "r");
-		
-		if (!pipe) {cout << "ERROR 1, exiting." << endl << endl; return 0.000001;}
-		char buffer[128];
-		std::string result = "";
-		while(!feof(pipe)) 
-		{
-			if(fgets(buffer, 128, pipe) != NULL)
-				result += buffer;
-		}
-		pclose(pipe);
+    	// Get md5sum of vxa file, and keep on record as archive, so that future individuals can have fitnesses looked up instead of evaluated if they share the same phenotype
+//	char filename[50];
+//	std::sprintf(filename, "md5sum voxelyzeInputFromPopulation%d.vxa", (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))));
+//	cout << "The filename is: " << filename << "\n";
+//    	FILE* pipe = popen(filename, "r");
 
-		std::string md5sumString = result.substr(0,32);
-		// cout << "md5sum: " << md5sumString << endl;
-		individual->setThismd5(md5sumString);
-		cout << "Individual: " << md5sumString << endl;
-
-		// look up if individual has been previously evaluated
-		if (fitnessLookup.find(md5sumString) != fitnessLookup.end())
-		{
-			pair<double, double> fits = fitnessLookup[md5sumString];
-			origFitness = fits.first; // before any fitness penalties
-			individual->setOrigFitness(origFitness);
-			fitness = fits.second; // after any fitness penaltiesint exitCode0 = std::system("mkdir champVXAs");
-			cout << "This individual was already evaluated!" << endl;
-			
-			return fitness;
-		}
+// This code will not be used, as both individuals would have to have the same md5 string in two different trials for caching to make sense, which is probably too unlikely		
+//		if (!pipe) {cout << "ERROR 1, exiting." << endl << endl; return 0.000001;}
+//		char buffer[128];
+//		std::string result = "";
+//		while(!feof(pipe)) 
+//		{
+//			if(fgets(buffer, 128, pipe) != NULL)
+//				result += buffer;
+//		}
+//		pclose(pipe);
+//
+//		std::string md5sumString = result.substr(0,32);
+//		// cout << "md5sum: " << md5sumString << endl;
+//		individual->setThismd5(md5sumString);
+//		cout << "Individual: " << md5sumString << endl;
+//
+//		// look up if individual has been previously evaluated
+//		if (fitnessLookup.find(md5sumString) != fitnessLookup.end())
+//		{
+//			pair<double, double> fits = fitnessLookup[md5sumString];
+//			origFitness = fits.first; // before any fitness penalties
+//			individual->setOrigFitness(origFitness);
+//			fitness = fits.second; // after any fitness penaltiesint exitCode0 = std::system("mkdir champVXAs");
+//			cout << "This individual was already evaluated!" << endl;
+//			
+//			return fitness;
+//		}
 
 		std::cout << "voxels filled: " << voxelsFilled << std::endl;
 		std::cout << "container size: (" << num_x_voxels << ", " << num_y_voxels << ", " << num_y_voxels << ")" << std::endl;
@@ -258,9 +266,13 @@ namespace HCUBE
 		// cout << "starting voxelyze evaluation now" << endl;
 
 		// System call to voxelyze to run simulation -- make sure that executable is already built, and that it lives in the path specified here
-		FILE* input = popen("./voxelyze -f voxelyzeInputFromCPPN.vxa","r");
+		char filename[50];
+		std::sprintf(filename, "./voxelyze -f voxelyzeInputFromPopulation%d.vxa", (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))));
+		cout << "Starting evaluation:\n" << filename << "\n";
+		
+		FILE* input = popen(filename,"r");
 		// FILE* input = popen(callVoxleyzeCmd.str().c_str(),"r");
-
+		cout << "Opened voxelyze\n";
 
 		// Read Fitness File ===========================================================================================================================================
 
@@ -368,10 +380,6 @@ namespace HCUBE
 			infile.close();
 		}
 
-		// if fitness is not greater than zero or is an absurdly large number, something probably went wrong.  Just assign minimum fitness and exit the evaluation.
-		if (fitness < 0.000001) return 0.000001;
-		if (fitness > 10000) return 0.000001;
-
 		// keep a record of the actual distance traveled before any penalties are applied too
 		origFitness = fitness;
 		individual->setOrigFitness(origFitness);
@@ -379,15 +387,17 @@ namespace HCUBE
 		// adjust fitness by the penalty factor
 		fitness = fitness * calculateFitnessAdjustment( matrixForVoxelyze );
 					
+		// if fitness is not greater than zero or is an absurdly large number, something probably went wrong.  Just assign minimum fitness and exit the evaluation.
+
 		if (fitness < 0.000001) fitness = 0.000001;
 		if (fitness > 10000) fitness = 0.000001;
 
-		pair <double, double> fits (origFitness, fitness);	
-		fitnessLookup[md5sumString]=fits;
+		//pair <double, double> fits (origFitness, fitness);	
+		//fitnessLookup[md5sumString]=fits;
 
 		moveFitnessFile(individual);
 
-		// cout << "Adjusted Fitness: " << fitness << endl;
+		cout << "Adjusted Fitness: " << fitness << endl;
 
 		return fitness; 
     }
@@ -646,7 +656,10 @@ namespace HCUBE
 			// remove old champ vxa
 			// int exitCode3 = std::system("rm thisGenChampVXA/*.vxa");
 			// copy vxa to champ folder
-			moveToChampFolderCmd<< "cp voxelyzeInputFromCPPN.vxa " 
+			char filename[75];
+			std::sprintf(filename, "voxelyzeInputFromPopulation%d.vxa", (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))));
+			cout << "Moving to champ folder: filename is: " << filename << "\n";
+			moveToChampFolderCmd<< "cp voxelyzeInputFromPopulation" << (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))) << ".vxa "
 								<< "champVXAs"
 								<< "/" << NEAT::Globals::getSingleton()->getOutputFilePrefix() 
 								<< "--Gen_" << genBuffer
@@ -661,7 +674,10 @@ namespace HCUBE
 		if (genNum < NEAT::Globals::getSingleton()->getParameterValue("AlsoSaveFirstGens") or genNum % (int)NEAT::Globals::getSingleton()->getParameterValue("SaveVXAEvery")==0)
 		{	
 			// move vxa to generation folder
-			moveToGenFolderCmd  << "mv voxelyzeInputFromCPPN.vxa " 
+			char filename[75];
+			std::sprintf(filename, "voxelyzeInputFromPopulation%d.vxa", (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))));			
+			cout << "Moving to gen folder: filename is: " << filename << "\n";
+			moveToGenFolderCmd  << "mv voxelyzeInputFromPopulation" << (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))) << ".vxa "
 								<< "Gen_" << genBuffer 
 								<< "/" << NEAT::Globals::getSingleton()->getOutputFilePrefix() 
 								<< "--Gen_" << genBuffer
@@ -678,7 +694,10 @@ namespace HCUBE
 		else
 		{
 			// remove gen folder
-			int exitCode3 = std::system("rm voxelyzeInputFromCPPN.vxa");
+			char filename[50];
+			std::sprintf(filename, "rm voxelyzeInputFromPopulation%d.vxa", (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))));
+			cout << "The filename is: " << filename << "\n";
+			int exitCode3 = std::system(filename);
 		}
 
 		//delete fitness file
@@ -690,7 +709,10 @@ namespace HCUBE
 	{
 		
   		ofstream myfile;
-  		myfile.open ("voxelyzeInputFromCPPN.vxa");
+		char filename[50];
+		std::sprintf(filename, "voxelyzeInputFromPopulation%d.vxa", (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))));
+		cout << "Writing voxelyze file: filename is: " << filename << "\n";
+  		myfile.open (filename);
   		myfile << "\
 <?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n\
 <VXA Version=\"1.0\">\n\

@@ -43,14 +43,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT
+CMAKE_SOURCE_DIR = /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT
+CMAKE_BINARY_DIR = /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT
 
 #=============================================================================
 # Directory level rules for directory NEAT
@@ -74,7 +74,7 @@ NEAT/preinstall:
 NEAT/CMakeFiles/NEAT.dir/all:
 	$(MAKE) -f NEAT/CMakeFiles/NEAT.dir/build.make NEAT/CMakeFiles/NEAT.dir/depend
 	$(MAKE) -f NEAT/CMakeFiles/NEAT.dir/build.make NEAT/CMakeFiles/NEAT.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles  25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles  25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40
 	@echo "Built target NEAT"
 .PHONY : NEAT/CMakeFiles/NEAT.dir/all
 
@@ -84,9 +84,9 @@ all: NEAT/CMakeFiles/NEAT.dir/all
 
 # Build rule for subdir invocation for target.
 NEAT/CMakeFiles/NEAT.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 NEAT/CMakeFiles/NEAT.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles 0
 .PHONY : NEAT/CMakeFiles/NEAT.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ Hypercube_NEAT/CMakeFiles/Hypercube_NEAT.dir/all: NEAT/CMakeFiles/NEAT.dir/all
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT.dir/all: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/all
 	$(MAKE) -f Hypercube_NEAT/CMakeFiles/Hypercube_NEAT.dir/build.make Hypercube_NEAT/CMakeFiles/Hypercube_NEAT.dir/depend
 	$(MAKE) -f Hypercube_NEAT/CMakeFiles/Hypercube_NEAT.dir/build.make Hypercube_NEAT/CMakeFiles/Hypercube_NEAT.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles  1
 	@echo "Built target Hypercube_NEAT"
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT.dir/all
 
@@ -137,9 +137,9 @@ all: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT.dir/all
 
 # Build rule for subdir invocation for target.
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles 40
 	$(MAKE) -f CMakeFiles/Makefile2 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles 0
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT.dir/rule
 
 # Convenience name for target.
@@ -162,7 +162,7 @@ clean: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT.dir/clean
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/all: NEAT/CMakeFiles/NEAT.dir/all
 	$(MAKE) -f Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/build.make Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/depend
 	$(MAKE) -f Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/build.make Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles  2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles  2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
 	@echo "Built target Hypercube_NEAT_Base"
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/all
 
@@ -172,9 +172,9 @@ all: Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/all
 
 # Build rule for subdir invocation for target.
 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles 39
 	$(MAKE) -f CMakeFiles/Makefile2 Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/CMakeFiles 0
 .PHONY : Hypercube_NEAT/CMakeFiles/Hypercube_NEAT_Base.dir/rule
 
 # Convenience name for target.

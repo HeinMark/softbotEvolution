@@ -51,7 +51,7 @@ namespace HCUBE
 	{
 		delete populationMutex;
 	}
-	
+		
 	void ExperimentRun::setupExperiment(int _experimentType, string _outputFileName)
 	{
 		experimentType = _experimentType;
@@ -258,7 +258,7 @@ namespace HCUBE
 			
 			//Destroy the document
 		}
-		
+
 		int experimentType = int(NEAT::Globals::getSingleton()->getParameterValue("ExperimentType")+0.001);
 		
 		cout << "Loading Experiment: " << experimentType << endl;

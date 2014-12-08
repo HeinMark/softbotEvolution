@@ -43,14 +43,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+# Escaping for special characters.
+EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/tinyxmldll
+CMAKE_SOURCE_DIR = /home/heinmr/Documents/softbotEvolution/base/hyperneat/tinyxmldll
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/tinyxmldll
+CMAKE_BINARY_DIR = /home/heinmr/Documents/softbotEvolution/base/hyperneat/tinyxmldll
 
 #=============================================================================
 # Target rules for target CMakeFiles/tinyxmldll.dir
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/tinyxml
 CMakeFiles/tinyxmldll.dir/all:
 	$(MAKE) -f CMakeFiles/tinyxmldll.dir/build.make CMakeFiles/tinyxmldll.dir/depend
 	$(MAKE) -f CMakeFiles/tinyxmldll.dir/build.make CMakeFiles/tinyxmldll.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/tinyxmldll/CMakeFiles  1 2 3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/heinmr/Documents/softbotEvolution/base/hyperneat/tinyxmldll/CMakeFiles  1 2 3
 	@echo "Built target tinyxmldll"
 .PHONY : CMakeFiles/tinyxmldll.dir/all
 
@@ -69,9 +69,9 @@ all: CMakeFiles/tinyxmldll.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tinyxmldll.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/tinyxmldll/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/heinmr/Documents/softbotEvolution/base/hyperneat/tinyxmldll/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tinyxmldll.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nick/projects/softbots/hyperneat/HyperNEAT_v2_5/tinyxmldll/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/heinmr/Documents/softbotEvolution/base/hyperneat/tinyxmldll/CMakeFiles 0
 .PHONY : CMakeFiles/tinyxmldll.dir/rule
 
 # Convenience name for target.

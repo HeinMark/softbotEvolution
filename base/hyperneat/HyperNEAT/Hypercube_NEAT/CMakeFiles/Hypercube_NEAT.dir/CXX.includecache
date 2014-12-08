@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/main.cpp
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/main.cpp
 HCUBE_Defines.h
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_Defines.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_Defines.h
 HCUBE_ExperimentRun.h
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_ExperimentRun.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/HCUBE_ExperimentRun.h
 Experiments/HCUBE_Experiment.h
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_Experiment.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_Experiment.h
 Experiments/HCUBE_FindClusterExperiment.h
-/home/nick/projects/softbotsGithub/noBoudningBoxHN/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_FindClusterExperiment.h
+/home/heinmr/Documents/softbotEvolution/base/hyperneat/HyperNEAT/Hypercube_NEAT/src/Experiments/HCUBE_FindClusterExperiment.h
 
 Hypercube_NEAT/../NEAT/include/NEAT.h
 NEAT_Globals.h

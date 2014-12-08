@@ -1,0 +1,75 @@
+num links:44
+num nodes:17
+ is node number: 16
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : 1.21591
+0->6 : 0.109892
+0->7 : -0.200646
+0->8 : 0.0751653
+0->9 : -2.96683
+0->10 : -0.308257
+1->5 : -0.1904
+1->6 : 1.99918
+1->7 : 2.43029
+1->8 : 1.31802
+1->9 : 0
+1->10 : 0.116864
+2->5 : -0.34466
+2->6 : -2.37988
+2->7 : -2.76334
+2->8 : 0.609101
+2->9 : 0.198136
+2->10 : -1.4027
+3->5 : 1.03071
+3->6 : -0.659124
+3->7 : -1.62596
+3->8 : -0.237211
+3->9 : 2.5612
+3->10 : 1.88999
+4->5 : 0.795028
+4->6 : -0.199037
+4->7 : 1.41894
+4->8 : -0.199863
+4->9 : -1.62368
+4->10 : 0.227307
+4->11 : -0.153645
+11->5 : 0.44155
+1->11 : -1.26497
+3->12 : 1.09491
+12->6 : -0.425148
+3->13 : 1.11173
+13->5 : -0.0899123
+3->14 : 0.272519
+14->6 : -0.49596
+11->8 : -0.947523
+4->15 : 0.840301
+15->6 : -0.205099
+2->16 : 1.08012
+16->10 : -0.183781
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_SQUARE
+ activation function 12: ACTIVATION_FUNCTION_SIN
+ activation function 13: ACTIVATION_FUNCTION_GAUSSIAN
+ activation function 14: ACTIVATION_FUNCTION_SIGMOID
+ activation function 15: ACTIVATION_FUNCTION_SIN
+ activation function 16: ACTIVATION_FUNCTION_SQUARE
