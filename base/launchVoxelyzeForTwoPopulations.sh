@@ -8,11 +8,27 @@ cd ${rootDir}
 
 while 	true;
 do {
-	if test -e voxelyzeInputFromPopulation1.vxa & test -e voxelyzeInputFromPopulation1.vxa;
+	if test -e voxelyzeInputFromPopulation1.vxa & test -e voxelyzeInputFromPopulation2.vxa;
 	then
-		./voxelyze -f voxelyzeInputFromPopulation1.vxa;
-		./voxelyze -f voxelyzeInputFromPopulation2.vxa; 
-		# ./voxelyze -f voxelyzeInputFromPopulation1.vxa -g voxelyzeInputFromPopulation2.vxa
+		echo 'Creating input file'
+		#Cut off the ending of the file
+		head -189 voxelyzeInputFromPopulation1.vxa > voxelyzeInputFromCPPN.vxa
+
+		# Combine the two files together into one file
+		echo 'Combining voxelyze arrays'
+
+		#Put the buffer in
+		echo '<Layer><![CDATA[0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]]></Layer>' >> voxelyzeInputFromCPPN.vxa
+		echo '<Layer><![CDATA[0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]]></Layer>' >> voxelyzeInputFromCPPN.vxa
+		echo '<Layer><![CDATA[0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]]></Layer>' >> voxelyzeInputFromCPPN.vxa
+
+		#Take the last lines (creature + ending) of second file
+		sed -n '180,193p' voxelyzeInputFromPopulation2.vxa >> test.vxa
+
+		./voxelyze -f voxelyzeInputFromCPPN.vxa
+		
+		rm voxelyzeInputFromPopulation1.vxa
+		rm voxelyzeInputFromPopulation2.vxa
 	fi
 	if test -e endflag;
 	then

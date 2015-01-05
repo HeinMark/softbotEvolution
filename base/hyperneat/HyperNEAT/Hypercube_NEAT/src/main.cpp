@@ -64,7 +64,7 @@ int HyperNEAT_main(int argc,char **argv)
 			   else
 				   cout << "Using the following parameter file: " << paramFileName << endl;
 		   }
-			
+		
 		if (argc<=1)
 		{
 			cout << "You must pass the parameters and the output file as command "
