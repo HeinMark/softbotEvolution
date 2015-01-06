@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "" > voxelyzeInputFromCPPN.vxa
+for x in 180 181 182 183 184 185 186 187 188 189
+do
+{
+	pop1=""
+	#Add pop1 data
+	pop1=$(sed -n ${x}','${x}'p' voxelyzeInputFromPopulation1.vxa | awk '{sub(/].*/,""); print}')
+	
+	#Add Buffer
+	buffer='ABCDABCDAB'
+
+	#Add pop2 data'
+	pop2=$(sed -n ${x}','${x}'p' voxelyzeInputFromPopulation2.vxa | awk '{sub(/<Layer><\!\[CDATA\[/,""); print}')
+	
+	echo $pop1$buffer$pop2 >> voxelyzeInputFromCPPN.vxa
+}
+done

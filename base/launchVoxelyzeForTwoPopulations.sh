@@ -1,3 +1,4 @@
+#!/bin/bash
 # This script is used to constantly check if both voxelyzeInputFromPopulationX.vxa files exist,
 # and then calls voxelyze on those two vxa files to have them compete.
 # Currently, to exit the script, you either ^C it, or run the command "touch endflag" in the root directory.
@@ -10,20 +11,31 @@ while 	true;
 do {
 	if test -e voxelyzeInputFromPopulation1.vxa & test -e voxelyzeInputFromPopulation2.vxa;
 	then
+		rm voxelyzeInputFromCPPN.vxa
 		echo 'Creating input file'
 		#Cut off the ending of the file
-		head -189 voxelyzeInputFromPopulation1.vxa > voxelyzeInputFromCPPN.vxa
+		head -176 voxelyzeInputFromPopulation1.vxa > voxelyzeInputFromCPPN.vxa
+		echo '<Y_Voxels>23</Y_Voxels>' >> voxelyzeInputFromCPPN.vxa
+		echo '<Z_Voxels>10</Z_Voxels>' >> voxelyzeInputFromCPPN.vxa
+		echo '<Data>' >> voxelyzeInputFromCPPN.vxa
+		for x in 180 181 182 183 184 185 186 187 188 189
+		do
+		{
+			pop1=""
+			#Add pop1 data
+			pop1=$(sed -n ${x}','${x}'p' voxelyzeInputFromPopulation1.vxa | awk '{sub(/].*/,""); print}')
+	
+			#Add Buffer
+			buffer='000000000000000000000000000000'
 
-		# Combine the two files together into one file
-		echo 'Combining voxelyze arrays'
-
-		#Put the buffer in
-		echo '<Layer><![CDATA[0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]]></Layer>' >> voxelyzeInputFromCPPN.vxa
-		echo '<Layer><![CDATA[0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]]></Layer>' >> voxelyzeInputFromCPPN.vxa
-		echo '<Layer><![CDATA[0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000]]></Layer>' >> voxelyzeInputFromCPPN.vxa
-
-		#Take the last lines (creature + ending) of second file
-		sed -n '180,193p' voxelyzeInputFromPopulation2.vxa >> test.vxa
+			#Add pop2 data'
+			pop2=$(sed -n ${x}','${x}'p' voxelyzeInputFromPopulation2.vxa | awk '{sub(/<Layer><\!\[CDATA\[/,""); print}')
+	
+			echo $pop1$buffer$pop2 >> voxelyzeInputFromCPPN.vxa
+		}
+		done
+		
+		tail -4 voxelyzeInputFromPopulation2.vxa >> voxelyzeInputFromCPPN.vxa
 
 		./voxelyze -f voxelyzeInputFromCPPN.vxa
 		
