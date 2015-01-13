@@ -30,7 +30,7 @@ void CVX_SimGA::SaveResultFile(std::string filename)
 	XML1.SaveFile("softbotsOutput1.xml");
 
 	CXML_Rip XML2;
-	WriteResultFile(&XML2, 2);
+	WriteResultFile(&XML, 2);
 	XML2.SaveFile("softbotsOutput1.xml");
 }
 

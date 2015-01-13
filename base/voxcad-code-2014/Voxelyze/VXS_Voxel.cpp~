@@ -33,12 +33,12 @@ CVXS_Voxel::~CVXS_Voxel(void)
 
 void CVXS_Voxel::CalculateCombatant(void) // sets the combatant number based on position
 {
-	if (this.z < 10)
+	if (Pos.getY() < 10)
 		combatantNumber = 1;
-	else if (this.z < 13)
-		combatantNumber = 0;
-	else 
+	else if (Pos.getY() < 13)
 		combatantNumber = 2;
+	else 
+		combatantNumber = -1;
 }
 
 CVXS_Voxel& CVXS_Voxel::operator=(const CVXS_Voxel& VIn)

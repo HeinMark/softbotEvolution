@@ -71,7 +71,7 @@ public:
 	//utilities
 	inline void ZeroMotion() {LinMom = Vec3D<double>(0,0,0); AngMom = Vec3D<double>(0,0,0); Vel = Vec3D<>(0,0,0); AngVel = Vec3D<>(0,0,0); KineticEnergy = 0;}
 	vfloat CalcVoxMatStress(const vfloat StrainIn, bool* const IsPastYielded, bool* const IsPastFail) const;
-	int whoami;
+	int combatantNumber;
 
 	//display color stuff
 	void SetColor(float r, float g, float b, float a);

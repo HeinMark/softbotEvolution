@@ -4,7 +4,7 @@
 # Currently, to exit the script, you either ^C it, or run the command "touch endflag" in the root directory.
 
 
-rootDir='/home/heinmr/Documents/softbotEvolution/base/TestTwoPopulations/'
+rootDir='/home/heinmr/Documents/softbotEvolution/base/CombatantTrial/'
 cd ${rootDir}
 
 while 	true;
@@ -15,10 +15,11 @@ do {
 		echo 'Creating input file'
 		#Cut off the ending of the file
 		head -176 voxelyzeInputFromPopulation1.vxa > voxelyzeInputFromCPPN.vxa
+		echo '<X_Voxels>10</X_Voxels>' >> voxelyzeInputFromCPPN.vxa
 		echo '<Y_Voxels>23</Y_Voxels>' >> voxelyzeInputFromCPPN.vxa
 		echo '<Z_Voxels>10</Z_Voxels>' >> voxelyzeInputFromCPPN.vxa
 		echo '<Data>' >> voxelyzeInputFromCPPN.vxa
-		for x in 180 181 182 183 184 185 186 187 188 189
+		for x in 181 182 183 184 185 186 187 188 189 190
 		do
 		{
 			pop1=""
@@ -36,7 +37,8 @@ do {
 		done
 		
 		tail -4 voxelyzeInputFromPopulation2.vxa >> voxelyzeInputFromCPPN.vxa
-
+		
+		echo 'Starting voxelyze...'
 		./voxelyze -f voxelyzeInputFromCPPN.vxa
 		
 		rm voxelyzeInputFromPopulation1.vxa

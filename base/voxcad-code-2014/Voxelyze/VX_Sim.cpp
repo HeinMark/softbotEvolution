@@ -24,7 +24,7 @@ CVX_Sim::CVX_Sim(void)// : VoxelInput(this), BondInput(this) // : out("Logfile.t
 //	VoxelInput = new CVXS_Voxel(this, 0, 0, 0, Vec3D<>(0,0,0), 0);
 //	BondInput = new CVXS_Bond(this);
 //	BondInput->DefineBond(B_INPUT_LINEAR_NOROT, INPUT_VOX_INDEX, INPUT_VOX_INDEX);
-
+	
 	pEnv = NULL;
 	ImportSurfMesh=NULL;
 
@@ -93,10 +93,6 @@ CVX_Sim::CVX_Sim(void)// : VoxelInput(this), BondInput(this) // : out("Logfile.t
 
 	ClearAll();
 	OptimalDt = 0; //remove when hack in ClearAll is dealt with
-
-	iT = NumVox();
-	for(int i=0; i<iT, i++)
-		VoxArray[i].setCombatantVoxels();
 }
 
 CVX_Sim::~CVX_Sim(void)
@@ -322,7 +318,8 @@ void CVX_Sim::ClearAll(void) //Reset all initialized variables
 	DtFrozen = false;
 
 	SS.Clear();
-	IniCM = Vec3D<>(0,0,0);
+	IniCM1 = Vec3D<>(0,0,0);
+	IniCM2 = Vec3D<>(0,0,0);
 
 	delete ImportSurfMesh;
 	ImportSurfMesh=NULL;
@@ -746,7 +743,8 @@ bool CVX_Sim::TimeStep(std::string* pRetMessage)
 {
 	if ((not CmInitialized) and CurTime > InitCmTime )
 	{
-		IniCM = SS.CurCM;
+		IniCM1 = SS.CurCM1;
+		IniCM2 = SS.CurCM2;
 		// std::cout << "CM initialized to " << IniCM.x << "," << IniCM.y << "," << IniCM.z << std::endl;
 		CmInitialized = true;
 	}
@@ -876,8 +874,10 @@ bool CVX_Sim::UpdateStats(std::string* pRetMessage) //updates simulation state (
 	if (StatToCalc == CALCSTAT_NONE) return true;
 	bool CCom=StatToCalc&CALCSTAT_COM, CDisp=StatToCalc&CALCSTAT_DISP, CVel=StatToCalc & CALCSTAT_VEL, CKinE=StatToCalc&CALCSTAT_KINE, CStrE=StatToCalc&CALCSTAT_STRAINE, CEStrn=StatToCalc&CALCSTAT_ENGSTRAIN, CEStrs=StatToCalc&CALCSTAT_ENGSTRESS, CPressure=StatToCalc&CALCSTAT_PRESSURE;
 
-	if (CCom) SS.CurCM = GetCM(); //calculate center of mass
-
+	if (CCom) {
+		SS.CurCM1 = GetCombatantCM(1); // calculate center of mass for both combatants
+		SS.CurCM2 = GetCombatantCM(2);
+	}
 	//update the overall statisics (can't do this within threaded loops and be safe without mutexes...
 	vfloat tmpMaxVoxDisp2 = 0, tmpMaxVoxVel2 = 0, tmpMaxVoxKineticE = 0, tmpMaxVoxStrainE = 0, tmpMaxPressure = -FLT_MAX, tmpMinPressure = FLT_MAX;
 	vfloat tmpMaxBondStrain=0, tmpMaxBondStress=0, tmpTotalObjKineticE = 0, tmpTotalObjStrainE=0;
@@ -1555,22 +1555,22 @@ void CVX_Sim::CalcL1Bonds(vfloat Dist) //creates contact bonds for all voxels wi
 	//UpdateAllBondPointers();
 }
 
-Vec3D<> CVX_Sim::GetCM(void)
-{
-
-	vfloat TotalMass = 0;
-	Vec3D<> Sum(0,0,0);
-	int nVox = NumVox();
-	for (int i=0; i<nVox; i++){
+//Vec3D<> CVX_Sim::GetCM(void)
+//{
+//
+//	vfloat TotalMass = 0;
+//	Vec3D<> Sum(0,0,0);
+//	int nVox = NumVox();
+//	for (int i=0; i<nVox; i++){
 //		if (i==InputVoxSInd) continue;
-		CVXS_Voxel* it = &VoxArray[i];
-		vfloat ThisMass = it->GetMass();
-		Sum += it->GetCurPos()*ThisMass;
-		TotalMass += ThisMass;
-	}
-
-	return Sum/TotalMass;
-}
+//		CVXS_Voxel* it = &VoxArray[i];
+//		vfloat ThisMass = it->GetMass();
+//		Sum += it->GetCurPos()*ThisMass;
+//		TotalMass += ThisMass;
+//	}
+//
+//	return Sum/TotalMass;
+//}
 
 Vec3D<> CVX_Sim::GetCombatantCM(int combatant)
 {
@@ -1579,8 +1579,8 @@ Vec3D<> CVX_Sim::GetCombatantCM(int combatant)
 	Vec3D<> Sum(0,0,0);
 	int nVox = NumVox();
 	for (int i=0; i<nVox; i++){
-		if (i->combatantNumber!=combatant) continue;
 		CVXS_Voxel* it = &VoxArray[i];
+		if (it->combatantNumber!=combatant) continue;
 		vfloat ThisMass = it->GetMass();
 		Sum += it->GetCurPos()*ThisMass;
 		TotalMass += ThisMass;

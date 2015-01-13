@@ -22,6 +22,8 @@ class CVXS_BondCollision;
 class CVXS_Voxel : public CVX_Voxel
 {
 public:
+	void CalculateCombatant(void);
+
 	CVXS_Voxel(CVX_Sim* pSimIn, int SIndexIn, int XIndexIn, int MatIndexIn, Vec3D<>& NominalPositionIn, vfloat OriginalScaleIn);
 	~CVXS_Voxel(void);
 	CVXS_Voxel(const CVXS_Voxel& VIn) : CVX_Voxel(VIn) {*this = VIn;} //copy constructor

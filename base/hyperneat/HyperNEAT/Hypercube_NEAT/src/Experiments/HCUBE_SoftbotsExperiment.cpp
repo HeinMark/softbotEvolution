@@ -86,6 +86,9 @@ namespace HCUBE
     // instead the program looks up the stored fitness for that creature.
     double SoftbotsExperiment::processEvaluation(shared_ptr<NEAT::GeneticIndividual> individual)
     {
+		int popNum = 
+		(int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber")));
+
 		fitness = 0.000001; // minimum fitness value (must be greater than zero)
 		fitness2 = 1.1; // worst fitness value (higher is better, max is 1)
 		individual->setOrigFitness(fitness); // just record keeping, so that original fitness can record distnace after the actual fitness has been adjusted by penalties
@@ -224,44 +227,6 @@ namespace HCUBE
     	// create a vxa file describing our soft robot and environment (to be executed by the VoxCad GUI -- or underlying libraries, Voxelyze)
     	writeVoxelyzeFile(matrixForVoxelyze); 
 
-
-    	// Get md5sum of vxa file, and keep on record as archive, so that future individuals can have fitnesses looked up instead of evaluated if they share the same phenotype
-//	char filename[50];
-//	std::sprintf(filename, "md5sum voxelyzeInputFromPopulation%d.vxa", (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))));
-//	cout << "The filename is: " << filename << "\n";
-//    	FILE* pipe = popen(filename, "r");
-
-// This code will not be used, as both individuals would have to have the same md5 string in two different trials for caching to make sense, which is probably too unlikely		
-//		if (!pipe) {cout << "ERROR 1, exiting." << endl << endl; return 0.000001;}
-//		char buffer[128];
-//		std::string result = "";
-//		while(!feof(pipe)) 
-//		{
-//			if(fgets(buffer, 128, pipe) != NULL)
-//				result += buffer;
-//		}
-//		pclose(pipe);
-//
-//		std::string md5sumString = result.substr(0,32);
-//		// cout << "md5sum: " << md5sumString << endl;
-//		individual->setThismd5(md5sumString);
-//		cout << "Individual: " << md5sumString << endl;
-//
-//		// look up if individual has been previously evaluated
-//		if (fitnessLookup.find(md5sumString) != fitnessLookup.end())
-//		{
-//			pair<double, double> fits = fitnessLookup[md5sumString];
-//			origFitness = fits.first; // before any fitness penalties
-//			individual->setOrigFitness(origFitness);
-//			fitness = fits.second; // after any fitness penaltiesint exitCode0 = std::system("mkdir champVXAs");
-//			cout << "This individual was already evaluated!" << endl;
-//			
-//			return fitness;
-//		}
-
-		std::cout << "voxels filled: " << voxelsFilled << std::endl;
-		std::cout << "container size: (" << num_x_voxels << ", " << num_y_voxels << ", " << num_y_voxels << ")" << std::endl;
-
 		// Evaluate Individual =====================================================================================================================================
 
     	// just for timekeeping
@@ -271,13 +236,7 @@ namespace HCUBE
 		// cout << "starting voxelyze evaluation now" << endl;
 
 		// System call to voxelyze to run simulation -- make sure that executable is already built, and that it lives in the path specified here
-		char filename[50];
-		std::sprintf(filename, "./voxelyze -f voxelyzeInputFromPopulation%d.vxa", (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))));
-		cout << "Starting evaluation:\n" << filename << "\n";
-		
-		FILE* input = popen(filename,"r");
-		// FILE* input = popen(callVoxleyzeCmd.str().c_str(),"r");
-		cout << "Opened voxelyze\n";
+		std::ostringstream filename;
 
 		// Read Fitness File ===========================================================================================================================================
 
@@ -286,8 +245,9 @@ namespace HCUBE
 		while (not doneEval)
 		{
 			end = clock();
-			std::ifstream infile("softbotsOutput.xml"); // this is the name of the fitness file created (as we specified it when writing the vxa)
-			// std::ifstream infile(outFileName.str().c_str());
+			filename << "softbotsOutput" << popNum << ".xml";
+			std::ifstream infile(filename.str().c_str()); 
+			// this is the name of the fitness file created (as we specified it when writing the vxa)
 			
 			// if file exists, note how long it took to complete, and exit this loop by switching flag
 			if (infile.is_open())
@@ -334,11 +294,11 @@ namespace HCUBE
 			infile.close();
 		}
 
-		pclose(input); // clean up the process running the simulation
+		// pclose(input); // clean up the process running the simulation
 		
 		// open the fitness file again (you could also just move your pointer back to the beginning of the file)
-		std::ifstream infile("softbotsOutput.xml"); // this is the name of the fitness file created (as we specified it when writing the vxa)
-		// std::ifstream infile(outFileName.str().c_str());
+		std::ifstream infile(filename.str().c_str());
+		// this is the name of the fitness file created (as we specified it when writing the vxa)
 
 		std::string line;
 		float FinalCOM_DistX;
@@ -658,6 +618,8 @@ namespace HCUBE
 	{
 		std::ostringstream moveToGenFolderCmd;
 		std::ostringstream moveToChampFolderCmd;
+		std::ostringstream filename;
+		filename << "voxelyzeInputFromPopulation" << (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))) << ".vxa";
 
 		char genBuffer[100];
 		sprintf(genBuffer, "%04i", genNum);
@@ -674,9 +636,7 @@ namespace HCUBE
 			// remove old champ vxa
 			// int exitCode3 = std::system("rm thisGenChampVXA/*.vxa");
 			// copy vxa to champ folder
-			char filename[75];
-			std::sprintf(filename, "voxelyzeInputFromPopulation%d.vxa", (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))));
-			cout << "Moving to champ folder: filename is: " << filename << "\n";
+			cout << "Moving to champ folder: filename is: " << filename.str().c_str() << "\n";
 			moveToChampFolderCmd<< "cp voxelyzeInputFromPopulation" << (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))) << ".vxa "
 								<< "champVXAs"
 								<< "/" << NEAT::Globals::getSingleton()->getOutputFilePrefix() 
@@ -691,10 +651,8 @@ namespace HCUBE
 
 		if (genNum < NEAT::Globals::getSingleton()->getParameterValue("AlsoSaveFirstGens") or genNum % (int)NEAT::Globals::getSingleton()->getParameterValue("SaveVXAEvery")==0)
 		{	
-			// move vxa to generation folder
-			char filename[75];
-			std::sprintf(filename, "voxelyzeInputFromPopulation%d.vxa", (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))));			
-			cout << "Moving to gen folder: filename is: " << filename << "\n";
+			// move vxa to generation folder		
+			cout << "Moving to gen folder: filename is: " << filename.str().c_str() << "\n";
 			moveToGenFolderCmd  << "mv voxelyzeInputFromPopulation" << (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))) << ".vxa "
 								<< "Gen_" << genBuffer 
 								<< "/" << NEAT::Globals::getSingleton()->getOutputFilePrefix() 
@@ -712,25 +670,24 @@ namespace HCUBE
 		else
 		{
 			// remove gen folder
-			char filename[50];
-			std::sprintf(filename, "rm voxelyzeInputFromPopulation%d.vxa", (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))));
-			cout << "The filename is: " << filename << "\n";
-			int exitCode3 = std::system(filename);
+			cout << "The filename is: " << filename.str().c_str() << "\n";
+			int exitCode3 = std::system(filename.str().c_str());
 		}
-
+	
 		//delete fitness file
-		int exitCode4 = std::system("rm -f softbotsOutput.xml");  
-		
+		std::ostringstream filenamecommand;
+		filenamecommand << "rm -f softbotsOutput" << (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))) << ".xml";
+		int exitCode4 = std::system(filenamecommand.str().c_str());
 	}
 
     void SoftbotsExperiment::writeVoxelyzeFile( vector< vector< vector< int > > > matrixForVoxelyze )
 	{
 		
   		ofstream myfile;
-		char filename[50];
-		std::sprintf(filename, "voxelyzeInputFromPopulation%d.vxa", (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))));
-		cout << "Writing voxelyze file: filename is: " << filename << "\n";
-  		myfile.open (filename);
+		std::ostringstream filename;
+		filename << "voxelyzeInputFromPopulation" << (int(NEAT::Globals::getSingleton()->getParameterValue("PopulationNumber"))) << ".vxa";
+		cout << "Writing voxelyze file: filename is: " << filename.str().c_str() << "\n";
+  		myfile.open (filename.str().c_str());
   		myfile << "\
 <?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n\
 <VXA Version=\"1.0\">\n\
