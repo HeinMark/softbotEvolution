@@ -12,7 +12,7 @@ See <http://www.opensource.org/licenses/lgpl-3.0.html> for license details.
 
 CVX_SimGA::CVX_SimGA()
 {
-	std::cout << "Started SimGA" << std::endl;
+	std::cout << "Started SimGA with two creatures" << std::endl;
 	Fitness = 0.0f;
 	TrackVoxel = 0;
 	FitnessFileName = "";
@@ -25,13 +25,15 @@ CVX_SimGA::CVX_SimGA()
 void CVX_SimGA::SaveResultFile(std::string filename)
 {
 	// For now, the dirty solution (it should parse the filename and add 1 or 2 to it)
+	std::cout << "Saving results to file 1" << std::endl;
 	CXML_Rip XML1;
 	WriteResultFile(&XML1, 1);
 	XML1.SaveFile("softbotsOutput1.xml");
 
+	std::cout << "Saving results to file 2" << std::endl;
 	CXML_Rip XML2;
 	WriteResultFile(&XML2, 2);
-	XML2.SaveFile("softbotsOutput1.xml");
+	XML2.SaveFile("softbotsOutput2.xml");
 }
 
 

@@ -15,7 +15,7 @@ do {
 		echo 'Creating input file'
 		#Cut off the ending of the file
 		head -176 voxelyzeInputFromPopulation1.vxa > voxelyzeInputFromCPPN.vxa
-		echo '<X_Voxels>10</Y_Voxels>' >> voxelyzeInputFromCPPN.vxa
+		echo '<X_Voxels>10</X_Voxels>' >> voxelyzeInputFromCPPN.vxa
 		echo '<Y_Voxels>23</Y_Voxels>' >> voxelyzeInputFromCPPN.vxa
 		echo '<Z_Voxels>10</Z_Voxels>' >> voxelyzeInputFromCPPN.vxa
 		echo '<Data>' >> voxelyzeInputFromCPPN.vxa
@@ -41,8 +41,9 @@ do {
 		echo 'Starting voxelyze...'
 		./voxelyze -f voxelyzeInputFromCPPN.vxa
 		
-		rm voxelyzeInputFromPopulation1.vxa
-		rm voxelyzeInputFromPopulation2.vxa
+		sleep 3
+		#rm voxelyzeInputFromPopulation1.vxa
+		#rm voxelyzeInputFromPopulation2.vxa
 	fi
 	if test -e endflag;
 	then

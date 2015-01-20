@@ -242,10 +242,11 @@ namespace HCUBE
 
 		// continually check for return of fitness file (non-optimized, for a cleaner approach pass with sockets)int exitCode0 = std::system("mkdir champVXAs");
 		bool doneEval = false;
+		filename << "softbotsOutput" << popNum << ".xml";
+		cout << "Hyperneat looking for output file: " << filename.str().c_str() << " " << endl;
 		while (not doneEval)
 		{
 			end = clock();
-			filename << "softbotsOutput" << popNum << ".xml";
 			std::ifstream infile(filename.str().c_str()); 
 			// this is the name of the fitness file created (as we specified it when writing the vxa)
 			

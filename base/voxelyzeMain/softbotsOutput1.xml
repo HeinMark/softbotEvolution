@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<Voxelyze_Sim_Result Version="1.0">
+    <Fitness>
+        <FinalCOM_DistX>-nan</FinalCOM_DistX>
+        <FinalCOM_DistY>-nan</FinalCOM_DistY>
+        <FinalCOM_DistZ>-nan</FinalCOM_DistZ>
+    </Fitness>
+</Voxelyze_Sim_Result>

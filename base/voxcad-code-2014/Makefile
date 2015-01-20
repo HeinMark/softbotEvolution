@@ -422,38 +422,38 @@ compiler_rcc_clean:
 	-$(DEL_FILE) GeneratedFiles/qrc_VoxCad.cpp
 GeneratedFiles/qrc_VoxCad.cpp: VoxCad/VoxCad.qrc \
 		VoxCad/VoxCad.ico \
-		VoxCad/Icons/EditLayer.png \
-		VoxCad/Icons/ViewTop.png \
-		VoxCad/Icons/Tensile.png \
-		VoxCad/Icons/ViewRight.png \
-		VoxCad/Icons/3DBrush.png \
-		VoxCad/Icons/Pencil.png \
-		VoxCad/Icons/Rectangle.png \
-		VoxCad/Icons/ViewPerspective.png \
-		VoxCad/Icons/Analyze.png \
-		VoxCad/Icons/Sandbox.png \
-		VoxCad/Icons/Bucket.png \
-		VoxCad/Icons/Material.png \
-		VoxCad/Icons/Ellipse.png \
-		VoxCad/Icons/Save.png \
-		VoxCad/Icons/ViewBottom.png \
-		VoxCad/Icons/Section.png \
-		VoxCad/Icons/ViewLeft.png \
-		VoxCad/Icons/ViewBack.png \
-		VoxCad/Icons/Record.png \
-		VoxCad/Icons/LayerBack.png \
 		VoxCad/Icons/New.png \
 		VoxCad/Icons/Cut.png \
-		VoxCad/Icons/Aux_View.png \
-		VoxCad/Icons/ViewFront.png \
-		VoxCad/Icons/ZoomExtents2.png \
+		VoxCad/Icons/Rectangle.png \
 		VoxCad/Icons/Paste.png \
+		VoxCad/Icons/ViewTop.png \
+		VoxCad/Icons/Tensile.png \
 		VoxCad/Icons/Open.png \
-		VoxCad/Icons/Workspace.png \
+		VoxCad/Icons/3DBrush.png \
+		VoxCad/Icons/Bucket.png \
+		VoxCad/Icons/Record.png \
 		VoxCad/Icons/BCs.png \
-		VoxCad/Icons/LayerForward.png \
+		VoxCad/Icons/ViewPerspective.png \
+		VoxCad/Icons/ViewFront.png \
+		VoxCad/Icons/Material.png \
+		VoxCad/Icons/Copy.png \
+		VoxCad/Icons/ViewLeft.png \
+		VoxCad/Icons/Aux_View.png \
+		VoxCad/Icons/ViewBack.png \
+		VoxCad/Icons/Sandbox.png \
+		VoxCad/Icons/LayerBack.png \
+		VoxCad/Icons/Analyze.png \
 		VoxCad/Icons/Info.png \
-		VoxCad/Icons/Copy.png
+		VoxCad/Icons/Ellipse.png \
+		VoxCad/Icons/Workspace.png \
+		VoxCad/Icons/ZoomExtents2.png \
+		VoxCad/Icons/LayerForward.png \
+		VoxCad/Icons/Section.png \
+		VoxCad/Icons/EditLayer.png \
+		VoxCad/Icons/Pencil.png \
+		VoxCad/Icons/ViewBottom.png \
+		VoxCad/Icons/Save.png \
+		VoxCad/Icons/ViewRight.png
 	/usr/lib/x86_64-linux-gnu/qt5/bin/rcc -name VoxCad VoxCad/VoxCad.qrc -o GeneratedFiles/qrc_VoxCad.cpp
 
 compiler_moc_header_make_all: GeneratedFiles/release/moc_VoxCad.cpp GeneratedFiles/release/moc_QVX_Edit.cpp GeneratedFiles/release/moc_QVX_Interfaces.cpp GeneratedFiles/release/moc_QVX_TensileTest.cpp GeneratedFiles/release/moc_Dlg_VideoCapture.cpp GeneratedFiles/release/moc_Dlg_3DBrush.cpp GeneratedFiles/release/moc_Dlg_BCs.cpp GeneratedFiles/release/moc_Dlg_EditPrim.cpp GeneratedFiles/release/moc_Dlg_FEAInfo.cpp GeneratedFiles/release/moc_Dlg_Palette.cpp GeneratedFiles/release/moc_Dlg_Physics.cpp GeneratedFiles/release/moc_Dlg_StructureEditor.cpp GeneratedFiles/release/moc_Dlg_Tensile.cpp GeneratedFiles/release/moc_Dlg_VoxInfo.cpp GeneratedFiles/release/moc_Dlg_Workspace.cpp GeneratedFiles/release/moc_QOpenGL.cpp GeneratedFiles/release/moc_QThreadWrap.cpp GeneratedFiles/release/moc_QSimplePlot.cpp

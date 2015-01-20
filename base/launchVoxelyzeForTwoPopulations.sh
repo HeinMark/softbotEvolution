@@ -41,8 +41,9 @@ do {
 		echo 'Starting voxelyze...'
 		./voxelyze -f voxelyzeInputFromCPPN.vxa
 		
-		rm voxelyzeInputFromPopulation1.vxa
-		rm voxelyzeInputFromPopulation2.vxa
+		sleep 3
+		#rm voxelyzeInputFromPopulation1.vxa
+		#rm voxelyzeInputFromPopulation2.vxa
 	fi
 	if test -e endflag;
 	then
