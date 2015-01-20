@@ -438,11 +438,11 @@ namespace NEAT
             species[a]->makeBabies(babies);
         }
         //cout << "jmc: done making babies\n";
-        if ((int)babies.size()!=generations[generations.size()-1/*onGeneration*/]->getIndividualCount())
-        {
-            cout << "Population size changed!\n";
-            throw CREATE_LOCATEDEXCEPTION_INFO("Population size changed!");
-        }
+        //if ((int)babies.size()!=generations[generations.size()-1/*onGeneration*/]->getIndividualCount())
+        //{
+        //    cout << "Population size changed!\n";
+        //    throw CREATE_LOCATEDEXCEPTION_INFO("Population size changed!");
+        //}
 
         cout << "Making new generation\n";
         shared_ptr<GeneticGeneration> newGeneration(generations[generations.size()-1/*onGeneration*/]->produceNextGeneration(babies,onGeneration+1));
