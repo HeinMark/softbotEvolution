@@ -1,7 +1,7 @@
 // GENERAL EVOLUTIONARY PARAMETERS:
 //---------------------------------
 PopulationSize 5.0 				// population size
-MaxGenerations 2.0	 			// max generations of evolution
+MaxGenerations 3.0	 			// max generations of evolution
 TournamentSize 2 				// size of tournament for selection (note: larger tournaments = more selection pressure)
 RandomSeed -1.0 				// note: this will be overwritten with your -R [seed] command line arguement (-1 uses the current time as your seed)
 PopulationNumber 1.0				// Number of the population to differentiate between competing populations

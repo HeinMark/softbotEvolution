@@ -531,7 +531,6 @@ bool CVX_Sim::Import(CVX_Environment* pEnvIn, CMesh* pSurfMeshIn, std::string* R
 
 	//Set up our surface list...
 	for (int i=0; i<NumVox(); i++){ //for each voxel in our newly-made array
-		VoxArray[i].CalculateCombatant();
 		if (VoxArray[i].IsSurfaceVoxel()){
 //		if (VoxArray[i].GetNumLocalBonds() != 6){
 			try {SurfVoxels.push_back(i);}
@@ -741,14 +740,6 @@ Returns true if the time step was successful, false otherwise.
 */
 bool CVX_Sim::TimeStep(std::string* pRetMessage)
 {
-	if ((not CmInitialized) and CurTime > InitCmTime )
-	{
-		IniCM1 = SS.CurCM1;
-		IniCM2 = SS.CurCM2;
-		// std::cout << "CM initialized to " << IniCM.x << "," << IniCM.y << "," << IniCM.z << std::endl;
-		CmInitialized = true;
-	}
-
 	bool SelfColEnabled = IsFeatureEnabled(VXSFEAT_COLLISIONS);
 	bool EquilibriumEnabled = IsFeatureEnabled(VXSFEAT_EQUILIBRIUM_MODE);
 
@@ -776,6 +767,16 @@ bool CVX_Sim::TimeStep(std::string* pRetMessage)
 	if (EquilibriumEnabled && KineticEDecreasing()){ ZeroAllMotion(); MotionZeroed = true;} 
 	else MotionZeroed = false;
 	UpdateStats(pRetMessage);
+
+	if (not CmInitialized)
+	{
+		IniCM1 = SS.CurCM1;
+		IniCM2 = SS.CurCM2;
+		//std::cout << "CM initialized to " << IniCM1.x << "," << IniCM1.y << "," << IniCM1.z << std::endl;
+		//std::cout << "CM initialized to " << IniCM2.x << "," << IniCM2.y << "," << IniCM2.z << std::endl;
+		CmInitialized = true;
+	}
+
 	return true;
 }
 
@@ -874,10 +875,9 @@ bool CVX_Sim::UpdateStats(std::string* pRetMessage) //updates simulation state (
 	if (StatToCalc == CALCSTAT_NONE) return true;
 	bool CCom=StatToCalc&CALCSTAT_COM, CDisp=StatToCalc&CALCSTAT_DISP, CVel=StatToCalc & CALCSTAT_VEL, CKinE=StatToCalc&CALCSTAT_KINE, CStrE=StatToCalc&CALCSTAT_STRAINE, CEStrn=StatToCalc&CALCSTAT_ENGSTRAIN, CEStrs=StatToCalc&CALCSTAT_ENGSTRESS, CPressure=StatToCalc&CALCSTAT_PRESSURE;
 
-	if (CCom) {
-		SS.CurCM1 = GetCombatantCM(1); // calculate center of mass for both combatants
-		SS.CurCM2 = GetCombatantCM(2);
-	}
+	SS.CurCM1 = GetCombatantCM(1); // calculate center of mass for both combatants
+	SS.CurCM2 = GetCombatantCM(2);
+	
 	//update the overall statisics (can't do this within threaded loops and be safe without mutexes...
 	vfloat tmpMaxVoxDisp2 = 0, tmpMaxVoxVel2 = 0, tmpMaxVoxKineticE = 0, tmpMaxVoxStrainE = 0, tmpMaxPressure = -FLT_MAX, tmpMinPressure = FLT_MAX;
 	vfloat tmpMaxBondStrain=0, tmpMaxBondStress=0, tmpTotalObjKineticE = 0, tmpTotalObjStrainE=0;
@@ -1574,17 +1574,24 @@ void CVX_Sim::CalcL1Bonds(vfloat Dist) //creates contact bonds for all voxels wi
 
 Vec3D<> CVX_Sim::GetCombatantCM(int combatant)
 {
-
+	//std::cout << "Calculating CM for combatant " << combatant << "\n";
+	//bool test = false;
 	vfloat TotalMass = 0;
 	Vec3D<> Sum(0,0,0);
 	int nVox = NumVox();
 	for (int i=0; i<nVox; i++){
 		CVXS_Voxel* it = &VoxArray[i];
-		if (it->combatantNumber!=combatant) continue;
-		vfloat ThisMass = it->GetMass();
-		Sum += it->GetCurPos()*ThisMass;
-		TotalMass += ThisMass;
+		if (it->combatantNumber!=combatant){
+			continue;
+		} else {
+			vfloat ThisMass = it->GetMass();
+			Sum += it->GetCurPos()*ThisMass;
+			TotalMass += ThisMass;
+			//test = true;
+		}
 	}
+	
+	//std::cout << "Found voxels with this combatant: " << test << "\n";
 
 	return Sum/TotalMass;
 }

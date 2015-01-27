@@ -33,12 +33,17 @@ CVXS_Voxel::~CVXS_Voxel(void)
 
 void CVXS_Voxel::CalculateCombatant(void) // sets the combatant number based on position
 {
-	if (Pos.getY() < 10)
+	//std::cout << "Pos.getX " << Pos.getX() << "\n";
+	//std::cout << "Pos.getY " << Pos.getY() << "\n";
+	//std::cout << "Pos.getZ " << Pos.getZ() << "\n";
+	if (Pos.getY() < .115)
 		combatantNumber = 1;
-	else if (Pos.getY() < 13)
+	else if (Pos.getY() > .135)
 		combatantNumber = 2;
 	else 
 		combatantNumber = -1;
+
+	//std::cout << "combatantNumber set to " << combatantNumber << "\n";
 }
 
 CVXS_Voxel& CVXS_Voxel::operator=(const CVXS_Voxel& VIn)

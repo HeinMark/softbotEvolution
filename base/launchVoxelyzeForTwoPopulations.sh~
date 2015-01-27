@@ -9,12 +9,12 @@ cd ${rootDir}
 
 while 	true;
 do {
-	if test -e voxelyzeInputFromPopulation1.vxa & test -e voxelyzeInputFromPopulation2.vxa;
+	if [ -e Pop1/voxelyzeInputFromPopulation1.vxa] && [ -e Pop2/voxelyzeInputFromPopulation2.vxa ];
 	then
 		rm voxelyzeInputFromCPPN.vxa
 		echo 'Creating input file'
 		#Cut off the ending of the file
-		head -176 voxelyzeInputFromPopulation1.vxa > voxelyzeInputFromCPPN.vxa
+		head -176 Pop1/voxelyzeInputFromPopulation1.vxa > voxelyzeInputFromCPPN.vxa
 		echo '<X_Voxels>10</X_Voxels>' >> voxelyzeInputFromCPPN.vxa
 		echo '<Y_Voxels>23</Y_Voxels>' >> voxelyzeInputFromCPPN.vxa
 		echo '<Z_Voxels>10</Z_Voxels>' >> voxelyzeInputFromCPPN.vxa
@@ -24,26 +24,32 @@ do {
 		{
 			pop1=""
 			#Add pop1 data
-			pop1=$(sed -n ${x}','${x}'p' voxelyzeInputFromPopulation1.vxa | awk '{sub(/].*/,""); print}')
+			pop1=$(sed -n ${x}','${x}'p' Pop1/voxelyzeInputFromPopulation1.vxa | awk '{sub(/].*/,""); print}')
 	
 			#Add Buffer
 			buffer='000000000000000000000000000000'
 
 			#Add pop2 data'
-			pop2=$(sed -n ${x}','${x}'p' voxelyzeInputFromPopulation2.vxa | awk '{sub(/<Layer><\!\[CDATA\[/,""); print}')
+			pop2=$(sed -n ${x}','${x}'p' Pop2/voxelyzeInputFromPopulation2.vxa | awk '{sub(/<Layer><\!\[CDATA\[/,""); print}')
 	
 			echo $pop1$buffer$pop2 >> voxelyzeInputFromCPPN.vxa
 		}
 		done
 		
-		tail -4 voxelyzeInputFromPopulation2.vxa >> voxelyzeInputFromCPPN.vxa
+		tail -4 Pop2/voxelyzeInputFromPopulation2.vxa >> voxelyzeInputFromCPPN.vxa
 		
 		echo 'Starting voxelyze...'
 		./voxelyze -f voxelyzeInputFromCPPN.vxa
 		
-		sleep 3
-		#rm voxelyzeInputFromPopulation1.vxa
-		#rm voxelyzeInputFromPopulation2.vxa
+		while true;
+		do {
+			if [ -f softbotsOutput1.xml] && [ -f softbotsOutput2.xml ];
+			then exit fi
+		} done
+
+		echo 'moving output to respective folders...'
+		mv softbotsOutput1.xml Pop1/softbotsOutput1.xml
+		mv softbotsOutput2.xml Pop2/softbotsOutput2.xml
 	fi
 	if test -e endflag;
 	then
