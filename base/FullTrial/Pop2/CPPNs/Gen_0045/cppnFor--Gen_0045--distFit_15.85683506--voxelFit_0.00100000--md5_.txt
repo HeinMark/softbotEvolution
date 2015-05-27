@@ -1,0 +1,86 @@
+num links:55
+num nodes:17
+ is node number: 16
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : 1.95836
+0->6 : -0.511562
+0->7 : -0.022297
+0->8 : -0.119438
+0->9 : -3
+0->10 : 1.42785
+1->5 : 0.819178
+1->6 : -1.48115
+1->7 : -0.057702
+1->8 : -0.687562
+1->9 : 0.560459
+1->10 : 1.21609
+2->5 : 0.266424
+2->6 : -1.61621
+2->7 : -0.0620974
+2->8 : -0.303095
+2->9 : 0.446604
+2->10 : -0.910625
+3->5 : 1.53892
+3->6 : -1.45924
+3->7 : 0.248778
+3->8 : -1.80775
+3->9 : -0.125668
+3->10 : 1.15038
+4->5 : -1.2029
+4->6 : 0.827329
+4->7 : 0.583745
+4->8 : -1.77113
+4->9 : 0.374973
+4->10 : -0.217821
+1->11 : 0.418794
+11->8 : -0.0328728
+3->12 : 1.80291
+12->10 : 1.5456
+2->13 : 1.97382
+13->8 : 0.638393
+11->9 : -3
+0->11 : -2.14364
+11->10 : -1.14577
+2->14 : 1.84046
+14->13 : -0.543699
+12->7 : -2.58331
+0->15 : 0.669734
+15->6 : 0.289248
+0->14 : -2.70419
+13->7 : 2.52401
+14->15 : -1.82853
+4->12 : 0.0579594
+1->14 : 2.68018
+4->16 : 0.736852
+16->10 : -0.376126
+3->16 : -0.648057
+0->12 : -1.15735
+15->10 : 0.670349
+4->11 : -1.07809
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_LINEAR
+ activation function 12: ACTIVATION_FUNCTION_SIGMOID
+ activation function 13: ACTIVATION_FUNCTION_SIGMOID
+ activation function 14: ACTIVATION_FUNCTION_SIGMOID
+ activation function 15: ACTIVATION_FUNCTION_LINEAR
+ activation function 16: ACTIVATION_FUNCTION_LINEAR

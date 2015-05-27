@@ -1,0 +1,79 @@
+num links:50
+num nodes:15
+ is node number: 14
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : 0.104824
+0->6 : -0.594519
+0->7 : 0.723745
+0->8 : -0.166477
+0->9 : 0.265274
+0->10 : -0.137607
+1->5 : -0.0207055
+1->6 : -0.0891682
+1->7 : 0.309151
+1->8 : -2.70031
+1->9 : 0.892805
+1->10 : -0.558768
+2->5 : 2.58765
+2->6 : 0.692528
+2->7 : -0.721092
+2->8 : -0.171558
+2->9 : 0.115792
+2->10 : 0.873243
+3->5 : -1.89572
+3->6 : 2.13181
+3->7 : 0.271713
+3->8 : -1.82378
+3->9 : -1.27985
+3->10 : -1.02678
+4->5 : -0.449971
+4->6 : 0.12257
+4->7 : 3
+4->8 : 0.828459
+4->9 : 1.04818
+4->10 : -2.26912
+4->11 : 0.430579
+11->9 : -1.00361
+3->11 : -0.378893
+1->11 : -2.33572
+3->12 : 0.544028
+12->6 : -0.260976
+3->13 : 1.33221
+13->5 : -0.418095
+11->10 : 0.454096
+13->8 : -1.54001
+0->12 : -2.25164
+4->14 : -0.12058
+14->6 : -0.0633291
+12->7 : 1.64023
+0->11 : 2.8642
+11->7 : 0.129897
+14->8 : -0.105185
+1->13 : 2.99555
+4->12 : -0.866062
+12->10 : 0.0907801
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_GAUSSIAN
+ activation function 12: ACTIVATION_FUNCTION_SIN
+ activation function 13: ACTIVATION_FUNCTION_SIN
+ activation function 14: ACTIVATION_FUNCTION_ABS_ROOT

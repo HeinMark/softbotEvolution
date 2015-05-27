@@ -1,0 +1,76 @@
+num links:46
+num nodes:16
+ is node number: 15
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : 0.154432
+0->6 : -0.0506551
+0->7 : 0.0225458
+0->8 : -0.28415
+0->9 : 2.47824
+0->10 : 0.295819
+1->5 : 2.08276
+1->6 : -0.494877
+1->7 : 2.69569
+1->8 : -2.04615
+1->9 : -0.999336
+1->10 : 3
+2->5 : 2.99294
+2->6 : 1.75412
+2->7 : 2.45964
+2->8 : 2.85257
+2->9 : 1.44938
+2->10 : 2.00363
+3->5 : 2.84594
+3->6 : 0.463472
+3->7 : -0.677353
+3->8 : -1.6147
+3->9 : -0.525698
+3->10 : 0.13268
+4->5 : -2.84526
+4->6 : -0.0508314
+4->7 : 0.473771
+4->8 : 1.83041
+4->9 : -1.63583
+4->10 : 0.317252
+3->11 : 1.28057
+11->10 : -0.112201
+4->12 : 1.43251
+12->7 : -0.354376
+3->13 : 1.7217
+13->9 : -0.55235
+0->14 : 0.915096
+14->5 : 1.58459
+1->13 : 1.79475
+11->8 : 0.865521
+1->15 : 0.790201
+15->9 : -0.134942
+11->6 : -1.90777
+4->11 : -1.45345
+15->6 : -2.87937
+4->14 : 0.015579
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_SIGMOID
+ activation function 12: ACTIVATION_FUNCTION_SQUARE
+ activation function 13: ACTIVATION_FUNCTION_ABS_ROOT
+ activation function 14: ACTIVATION_FUNCTION_ABS_ROOT
+ activation function 15: ACTIVATION_FUNCTION_SQUARE

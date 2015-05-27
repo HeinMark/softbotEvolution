@@ -15,9 +15,9 @@ do {
 		echo 'Creating input file'
 		#Cut off the ending of the file
 		head -176 Pop1/voxelyzeInputFromPopulation1.vxa > voxelyzeInputFromCPPN.vxa
-		echo '<X_Voxels>10</X_Voxels>' >> voxelyzeInputFromCPPN.vxa
-		echo '<Y_Voxels>23</Y_Voxels>' >> voxelyzeInputFromCPPN.vxa
-		echo '<Z_Voxels>10</Z_Voxels>' >> voxelyzeInputFromCPPN.vxa
+		echo '<X_Voxels>5</X_Voxels>' >> voxelyzeInputFromCPPN.vxa
+		echo '<Y_Voxels>13</Y_Voxels>' >> voxelyzeInputFromCPPN.vxa
+		echo '<Z_Voxels>5</Z_Voxels>' >> voxelyzeInputFromCPPN.vxa
 		echo '<Data>' >> voxelyzeInputFromCPPN.vxa
 		for x in 181 182 183 184 185 186 187 188 189 190
 		do
@@ -27,7 +27,7 @@ do {
 			pop1=$(sed -n ${x}','${x}'p' Pop1/voxelyzeInputFromPopulation1.vxa | awk '{sub(/].*/,""); print}')
 	
 			#Add Buffer
-			buffer='000000000000000000000000000000'
+			buffer='000000000000000'
 
 			#Add pop2 data'
 			pop2=$(sed -n ${x}','${x}'p' Pop2/voxelyzeInputFromPopulation2.vxa | awk '{sub(/<Layer><\!\[CDATA\[/,""); print}')

@@ -45,13 +45,21 @@ void CVX_SimGA::WriteResultFile(CXML_Rip* pXML, int population)
 	pXML->DownLevel("Fitness");
 	// pXML->Element("FinalCOM_Dist", SS.CurCM.Normalize()-IniCM.Normalize());
 	if (population == 1){
-		pXML->Element("FinalCOM_DistX", SS.CurCM1.x-IniCM1.x);
-		pXML->Element("FinalCOM_DistY", SS.CurCM1.y-IniCM1.y);
-		pXML->Element("FinalCOM_DistZ", SS.CurCM1.z-IniCM1.z);
+		pXML->Element("FinalCOM_DistX", SS.CurCM1.x-SS.CurCM2.x);
+		pXML->Element("FinalCOM_DistY", SS.CurCM1.y-SS.CurCM2.y);
+		pXML->Element("FinalCOM_DistZ", SS.CurCM1.z-SS.CurCM2.z);
 	} else {
-		pXML->Element("FinalCOM_DistX", SS.CurCM2.x-IniCM2.x);
-		pXML->Element("FinalCOM_DistY", SS.CurCM2.y-IniCM2.y);
-		pXML->Element("FinalCOM_DistZ", SS.CurCM2.z-IniCM2.z);
+		int x = (SS.CurCM1.x-SS.CurCM2.x);
+		int y = (SS.CurCM1.y-SS.CurCM2.y);
+		int z = (SS.CurCM1.z-SS.CurCM2.z);
+		
+		if (x*x > 1) x = 1;
+		if (y*y > 1) y = 1;
+		if (z*z > 1) z = 1;	
+
+		pXML->Element("FinalCOM_DistX", 1.-x*x);
+		pXML->Element("FinalCOM_DistY", 1.-y*y);
+		pXML->Element("FinalCOM_DistZ", 1.-z*z);
 	}
 	pXML->UpLevel();
 	pXML->UpLevel();

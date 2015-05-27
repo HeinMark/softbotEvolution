@@ -1,0 +1,75 @@
+num links:44
+num nodes:17
+ is node number: 16
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : 2.6419
+0->6 : -1.3745
+0->7 : -0.137723
+0->8 : 0.0598424
+0->9 : 2.50101
+0->10 : -2.97234
+1->5 : 2.50228
+1->6 : 0.306647
+1->7 : -0.357432
+1->8 : -0.898463
+1->9 : -1.98719
+1->10 : 2.15368
+2->5 : -1.89772
+2->6 : 1.40771
+2->7 : 3
+2->8 : 3
+2->9 : 0.197245
+2->10 : 0.490815
+3->5 : 1.00458
+3->6 : 2.3068
+3->7 : -1.72575
+3->8 : -1.61866
+3->9 : 0.0438987
+3->10 : -0.322774
+4->5 : -0.229109
+4->6 : -0.100939
+4->7 : -0.390753
+4->8 : 2.29533
+4->9 : -2.43841
+4->10 : -0.473484
+3->11 : 0.957464
+11->10 : 0.0395
+3->12 : 1.33614
+12->11 : -0.30441
+11->7 : -0.454268
+4->13 : 0.432507
+13->6 : 0.41666
+2->14 : -0.258955
+14->10 : 0.605862
+4->15 : 0.867571
+15->5 : -0.000610345
+15->7 : 0.109711
+3->16 : -0.00131686
+16->11 : 0.582157
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_SIN
+ activation function 12: ACTIVATION_FUNCTION_COS
+ activation function 13: ACTIVATION_FUNCTION_SIGMOID
+ activation function 14: ACTIVATION_FUNCTION_ABS_ROOT
+ activation function 15: ACTIVATION_FUNCTION_SIGMOID
+ activation function 16: ACTIVATION_FUNCTION_LINEAR

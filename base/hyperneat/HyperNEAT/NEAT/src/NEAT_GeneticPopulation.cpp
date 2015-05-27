@@ -281,15 +281,15 @@ namespace NEAT
         int numParents = int(generations[generations.size()-1/*onGeneration*/]->getIndividualCount());
 		
 		//check that no org has fitness <= zero
-		for(int a=0;a<numParents;a++)
-		{
-			// PRINT(generations[generations.size()-1/*onGeneration*/]->getIndividual(a)->getFitness());
-			
-			if(generations[generations.size()-1/*onGeneration*/]->getIndividual(a)->getFitness() < 1e-6)
-			{
-				throw CREATE_LOCATEDEXCEPTION_INFO("ERROR: Fitness must be a positive number!\n");
-			}
-		}						
+//		for(int a=0;a<numParents;a++)
+//		{
+//			// PRINT(generations[generations.size()-1/*onGeneration*/]->getIndividual(a)->getFitness());
+//			
+//			if(generations[generations.size()-1/*onGeneration*/]->getIndividual(a)->getFitness() < 1e-6)
+//			{
+//				throw CREATE_LOCATEDEXCEPTION_INFO("ERROR: Fitness must be a positive number!\n");
+//			}
+//		}						
 		
 
         double totalFitness=0;

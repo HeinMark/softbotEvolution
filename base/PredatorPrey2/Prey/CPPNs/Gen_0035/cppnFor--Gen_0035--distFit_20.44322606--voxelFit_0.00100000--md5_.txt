@@ -1,0 +1,78 @@
+num links:49
+num nodes:15
+ is node number: 14
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : 0.00657635
+0->6 : -0.494704
+0->7 : 0.631181
+0->8 : 0.116033
+0->9 : 0.341854
+0->10 : -0.100684
+1->5 : -0.10962
+1->6 : 0.156401
+1->7 : 0.0541011
+1->8 : -2.28199
+1->9 : 0.624883
+1->10 : -0.383363
+2->5 : 2.6972
+2->6 : 0.515537
+2->7 : -0.461659
+2->8 : -0.189225
+2->9 : 0.0544068
+2->10 : 0.932697
+3->5 : -1.92381
+3->6 : -0.0260778
+3->7 : 0.333053
+3->8 : 0.0854292
+3->9 : -1.29717
+3->10 : -1.07905
+4->5 : 0.193075
+4->6 : 0.0380406
+4->7 : 2.89654
+4->8 : 0.50767
+4->9 : 1.44391
+4->10 : -2.34524
+4->11 : 0.655083
+11->9 : -0.954782
+3->11 : -0.429593
+1->11 : -2.14606
+3->12 : 0.279678
+12->6 : -0.125888
+3->13 : 1.28101
+13->5 : -0.291909
+11->10 : 0.6232
+13->8 : -1.2168
+0->12 : -1.93383
+4->14 : 0.12637
+14->6 : 0.0885713
+12->7 : 1.41
+0->11 : 2.74974
+11->7 : 0.112617
+14->8 : -0.328171
+1->13 : 2.81128
+4->12 : -0.633927
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_GAUSSIAN
+ activation function 12: ACTIVATION_FUNCTION_SIN
+ activation function 13: ACTIVATION_FUNCTION_SIN
+ activation function 14: ACTIVATION_FUNCTION_ABS_ROOT

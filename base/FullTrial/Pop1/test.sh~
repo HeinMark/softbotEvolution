@@ -1,0 +1,4 @@
+!while [ ! -f softbotsOutput1.xml ] || [ ! -f softbotsOutput2.xml ];
+do {
+	sleep 1
+} done

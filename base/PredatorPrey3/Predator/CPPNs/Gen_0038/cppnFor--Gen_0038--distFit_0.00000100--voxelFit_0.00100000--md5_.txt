@@ -1,0 +1,76 @@
+num links:45
+num nodes:17
+ is node number: 16
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : 2.66235
+0->6 : -1.21178
+0->7 : -0.43638
+0->8 : 0.161017
+0->9 : 2.59739
+0->10 : -3
+1->5 : 2.09584
+1->6 : 0.0428528
+1->7 : -0.313845
+1->8 : -0.858199
+1->9 : -1.85415
+1->10 : 1.88653
+2->5 : -2.12426
+2->6 : 1.33721
+2->7 : 2.88626
+2->8 : 3
+2->9 : 0.137657
+2->10 : 0.694908
+3->5 : 1.383
+3->6 : 2.48727
+3->7 : -0.0930411
+3->8 : -1.29146
+3->9 : 0.44097
+3->10 : -0.417156
+4->5 : -0.364457
+4->6 : -0.375625
+4->7 : -0.537354
+4->8 : 2.69449
+4->9 : -2.28107
+4->10 : -0.217773
+3->11 : 0.918536
+11->10 : 0.164893
+3->12 : 0.732826
+12->11 : -0.266787
+11->7 : -0.288427
+4->13 : 0.257558
+13->6 : 0.400858
+2->14 : -0.288759
+14->10 : 0.259738
+4->15 : 1.20631
+15->5 : -0.267537
+15->7 : -0.00112703
+3->16 : 0.425174
+16->11 : 0.652565
+13->10 : 1.83624
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_SIN
+ activation function 12: ACTIVATION_FUNCTION_COS
+ activation function 13: ACTIVATION_FUNCTION_SIGMOID
+ activation function 14: ACTIVATION_FUNCTION_ABS_ROOT
+ activation function 15: ACTIVATION_FUNCTION_SIGMOID
+ activation function 16: ACTIVATION_FUNCTION_LINEAR

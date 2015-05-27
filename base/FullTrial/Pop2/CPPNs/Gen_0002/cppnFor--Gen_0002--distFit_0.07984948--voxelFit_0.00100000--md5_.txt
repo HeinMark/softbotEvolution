@@ -1,0 +1,54 @@
+num links:30
+num nodes:11
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : 2.70241
+0->6 : -1.94996
+0->7 : 2.90929
+0->8 : 2.17726
+0->9 : 1.71479
+0->10 : -0.631392
+1->5 : 0.445104
+1->6 : -2.82183
+1->7 : 1.01968
+1->8 : 1.1797
+1->9 : -2.72846
+1->10 : -0.0924475
+2->5 : 0.5725
+2->6 : -1.41355
+2->7 : 0.193917
+2->8 : 1.99057
+2->9 : 0.420937
+2->10 : -0.90626
+3->5 : -1.33951
+3->6 : 0.824866
+3->7 : 1.29869
+3->8 : -2.47003
+3->9 : -1.16447
+3->10 : 0.595983
+4->5 : -1.88284
+4->6 : -2.92991
+4->7 : 2.49616
+4->8 : 2.134
+4->9 : -1.86181
+4->10 : 0.735917
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID

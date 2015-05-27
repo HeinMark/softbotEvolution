@@ -16,7 +16,7 @@ do {
 		#Cut off the ending of the file
 		head -176 Pop1/voxelyzeInputFromPopulation1.vxa > voxelyzeInputFromCPPN.vxa
 		echo '<X_Voxels>10</X_Voxels>' >> voxelyzeInputFromCPPN.vxa
-		echo '<Y_Voxels>23</Y_Voxels>' >> voxelyzeInputFromCPPN.vxa
+		echo '<Y_Voxels>21</Y_Voxels>' >> voxelyzeInputFromCPPN.vxa
 		echo '<Z_Voxels>10</Z_Voxels>' >> voxelyzeInputFromCPPN.vxa
 		echo '<Data>' >> voxelyzeInputFromCPPN.vxa
 		for x in 181 182 183 184 185 186 187 188 189 190
@@ -27,7 +27,7 @@ do {
 			pop1=$(sed -n ${x}','${x}'p' Pop1/voxelyzeInputFromPopulation1.vxa | awk '{sub(/].*/,""); print}')
 	
 			#Add Buffer
-			buffer='000000000000000000000000000000'
+			buffer='0000000000'
 
 			#Add pop2 data'
 			pop2=$(sed -n ${x}','${x}'p' Pop2/voxelyzeInputFromPopulation2.vxa | awk '{sub(/<Layer><\!\[CDATA\[/,""); print}')
@@ -50,6 +50,8 @@ do {
 		echo 'moving output to respective folders...'
 		mv softbotsOutput1.xml Pop1/softbotsOutput1.xml
 		mv softbotsOutput2.xml Pop2/softbotsOutput2.xml
+		
+		sleep 3
 	fi
 	if test -e endflag;
 	then

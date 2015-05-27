@@ -211,9 +211,9 @@ namespace HCUBE
     	}
 
     	// Calculate array size (+1 for inclusive endpoints)
-    	num_x_voxels = maxIndexX-minIndexX+1;
-    	num_y_voxels = maxIndexY-minIndexY+1;
-    	num_z_voxels = maxIndexZ-minIndexZ+1;
+    	num_x_voxels = NEAT::Globals::getSingleton()->getParameterValue("BoundingBoxX");
+    	num_y_voxels = NEAT::Globals::getSingleton()->getParameterValue("BoundingBoxY");
+    	num_z_voxels = NEAT::Globals::getSingleton()->getParameterValue("BoundingBoxZ");
 
     	// create actual array, initialized with all zeros (empty voxels)
     	vector< vector< vector< int > > > matrixForVoxelyze (num_x_voxels, std::vector<std::vector<int> >(num_y_voxels, std::vector<int>(num_z_voxels, 0)));
@@ -305,6 +305,9 @@ namespace HCUBE
 		float FinalCOM_DistX;
 		float FinalCOM_DistY;
 		float FinalCOM_DistZ;
+//		float FinalCOM_Dist2X;
+//		float FinalCOM_Dist2Y;
+//		float FinalCOM_Dist2Z;
 
 		// parse the file line by line to find the fitness values you are looking for (in this case diatance moved).  this could also be done by parsing the xml tree
 		if (infile.is_open())
@@ -326,9 +329,27 @@ namespace HCUBE
 			    {
 			    	FinalCOM_DistZ = atof(line.substr(foundz+strlen("<FinalCOM_DistZ>"),line.find("</")-(foundz+strlen("<FinalCOM_DistZ>"))).c_str());
 			    }
+
+//			    foundx = line.find("<FinalCOM_Dist2X>");
+//			    if (foundx!=std::string::npos)
+//			    {
+//			    	FinalCOM_Dist2X = atof(line.substr(foundx+strlen("<FinalCOM_Dist2X>"),line.find("</")-(foundx+strlen("<FinalCOM_Dist2X>"))).c_str());
+//			    }
+//			    foundy = line.find("<FinalCOM_Dist2Y>");
+//			    if (foundy!=std::string::npos)
+//			    {
+//			    	FinalCOM_Dist2Y = atof(line.substr(foundy+strlen("<FinalCOM_Dist2Y>"),line.find("</")-(foundy+strlen("<FinalCOM_Dist2Y>"))).c_str());
+//			    }
+//			    foundz = line.find("<FinalCOM_Dist2Z>");
+//			    if (foundz!=std::string::npos)
+//			    {
+//			    	FinalCOM_Dist2Z = atof(line.substr(foundz+strlen("<FinalCOM_Dist2Z>"),line.find("</")-(foundz+strlen("<FinalCOM_Dist2Z>"))).c_str());
+//			    }
 			}
 
-			fitness = pow(pow(FinalCOM_DistX,2)+pow(FinalCOM_DistY,2),0.5);  // in this example we are only looking for displacement in the X-Y plane
+			//fitness = pow(pow(FinalCOM_DistX,2)+pow(FinalCOM_DistY,2),0.5) - .5*pow(pow(FinalCOM_Dist2X,2)+pow(FinalCOM_Dist2Y,2),0.5);
+			fitness = pow(pow(FinalCOM_DistX,2)+pow(FinalCOM_DistY,2),0.5);
+			// in this example we are only looking for displacement in the X-Y plane
 			
 			if ( NEAT::Globals::getSingleton()->getParameterValue("FitnessNormalizedBySize") )
 			{
@@ -357,7 +378,7 @@ namespace HCUBE
 		individual->setFitness2(fitness2);
 
 		if (fitness < 0.000001) fitness = 0.000001;
-		if (fitness > 10000) fitness = 0.000001;
+		if (fitness > 100000) fitness = 0.000001;
 
 		//pair <double, double> fits (origFitness, fitness);	
 		//fitnessLookup[md5sumString]=fits;
@@ -411,11 +432,6 @@ namespace HCUBE
 				cout << "max double size is: : " << std::numeric_limits<double>::max() << endl;
 				exit(88);
 			} 
-			if (fitness < 0)
-			{
-				cout << "Fitness Less Than Zero!!!, it is: " << fitness << "\n";  
-				exit(10);
-			}
 			
 			#if SHAPES_EXPERIMENT_DEBUG        
 				cout << "Individual Evaluation complete!\n";
@@ -704,7 +720,7 @@ namespace HCUBE
 </Damping>\n\
 <Collisions>\n\
 <SelfColEnabled>1</SelfColEnabled>\n\
-<ColSystem>3</ColSystem>\n\
+<ColSystem>1</ColSystem>\n\
 <CollisionHorizon>2</CollisionHorizon>\n\
 </Collisions>\n\
 <Features>\n\

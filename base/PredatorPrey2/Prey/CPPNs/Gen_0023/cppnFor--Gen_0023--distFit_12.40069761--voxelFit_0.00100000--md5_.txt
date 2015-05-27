@@ -1,0 +1,77 @@
+num links:47
+num nodes:16
+ is node number: 15
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : -0.000642361
+0->6 : -0.527108
+0->7 : 0.727782
+0->8 : -0.0999904
+0->9 : 0.399718
+0->10 : -0.399226
+1->5 : -0.269356
+1->6 : 1.41345
+1->7 : 0.561376
+1->8 : -2.46233
+1->9 : 0.6429
+1->10 : -0.802611
+2->5 : 2.78428
+2->6 : 0.67376
+2->7 : -1.46682
+2->8 : -1.60663
+2->9 : -0.289401
+2->10 : 0.298497
+3->5 : -1.1918
+3->6 : 2.40228
+3->7 : -0.00546393
+3->8 : 0.279216
+3->9 : -1.14181
+3->10 : -0.689861
+4->5 : 0.179524
+4->6 : 0.291828
+4->7 : 3
+4->8 : -2.46753
+4->9 : 1.42437
+4->10 : -2.78424
+4->11 : 0.785159
+11->9 : -0.739437
+3->11 : -0.22439
+1->11 : -2.73024
+3->12 : 0.674306
+12->6 : -0.124631
+3->13 : 0.832085
+13->5 : -0.163083
+11->10 : 0
+13->8 : -0.972249
+0->12 : -1.8701
+4->14 : 0.58647
+14->6 : 0.461726
+4->15 : -0.231536
+15->6 : 0.298736
+0->11 : 2.84134
+13->9 : 0.117168
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_GAUSSIAN
+ activation function 12: ACTIVATION_FUNCTION_SIN
+ activation function 13: ACTIVATION_FUNCTION_SIN
+ activation function 14: ACTIVATION_FUNCTION_COS
+ activation function 15: ACTIVATION_FUNCTION_ABS_ROOT

@@ -1,0 +1,77 @@
+num links:46
+num nodes:17
+ is node number: 16
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : 1.66664
+0->6 : 0
+0->7 : 0.545912
+0->8 : -1.183
+0->9 : -2.92398
+0->10 : 1.61189
+1->5 : 0.0484629
+1->6 : -0.971883
+1->7 : 0.299601
+1->8 : 0.12269
+1->9 : 1.02914
+1->10 : 1.07887
+2->5 : 0.410918
+2->6 : -1.11355
+2->7 : 0.467952
+2->8 : -0.0397827
+2->9 : 0.0361761
+2->10 : -0.45494
+3->5 : 1.81153
+3->6 : -1.67661
+3->7 : 3
+3->8 : -1.36008
+3->9 : 0.399292
+3->10 : 0
+4->5 : 0
+4->6 : 0.317736
+4->7 : 0.513822
+4->8 : 0
+4->9 : -0.194491
+4->10 : -0.269621
+1->11 : 0
+11->8 : 0
+3->12 : 1.69003
+12->10 : 0.85776
+2->13 : 1.4854
+13->8 : 0
+11->9 : -2.73155
+0->11 : -2.84835
+11->10 : -1.1332
+2->14 : 1.25551
+14->13 : -0.547145
+12->7 : -2.52255
+0->15 : 0.994904
+15->6 : 0.00188392
+2->16 : 1.07764
+16->6 : -0.582445
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_LINEAR
+ activation function 12: ACTIVATION_FUNCTION_SIGMOID
+ activation function 13: ACTIVATION_FUNCTION_SIGMOID
+ activation function 14: ACTIVATION_FUNCTION_SIGMOID
+ activation function 15: ACTIVATION_FUNCTION_LINEAR
+ activation function 16: ACTIVATION_FUNCTION_SQUARE

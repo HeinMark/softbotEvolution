@@ -1,0 +1,80 @@
+num links:48
+num nodes:18
+ is node number: 17
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : -1.14937
+0->6 : -2.81437
+0->7 : 2.06912
+0->8 : -0.966712
+0->9 : -0.912994
+0->10 : -1.35174
+1->5 : -2.92652
+1->6 : 0.843306
+1->7 : -1.02601
+1->8 : 1.29057
+1->9 : -1.82988
+1->10 : 1.33618
+2->5 : 2.12684
+2->6 : 2.4048
+2->7 : -3
+2->8 : -1.40766
+2->9 : 3
+2->10 : -1.79332
+3->5 : 0.0336736
+3->6 : 2.45985
+3->7 : -2.81307
+3->8 : -0.157502
+3->9 : -1.61481
+3->10 : -1.16653
+4->5 : 2.3965
+4->6 : -0.848009
+4->7 : 2.03719
+4->8 : -0.0862862
+4->9 : -1.8289
+4->10 : -0.48752
+0->11 : 1.28105
+11->10 : 0.162979
+11->6 : 2.64035
+1->12 : 1.068
+12->6 : -0.216914
+3->11 : -0.609214
+4->12 : -0.92055
+1->13 : 0.980524
+13->5 : -0.414319
+3->14 : 0.361854
+14->10 : 0.583167
+4->15 : 1.32052
+15->8 : 0.584355
+2->16 : 1.54143
+16->8 : -0.534379
+0->17 : 0.862176
+17->11 : 0.372645
+1->17 : 2.47244
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_SIGMOID
+ activation function 12: ACTIVATION_FUNCTION_SQUARE
+ activation function 13: ACTIVATION_FUNCTION_LINEAR
+ activation function 14: ACTIVATION_FUNCTION_LINEAR
+ activation function 15: ACTIVATION_FUNCTION_COS
+ activation function 16: ACTIVATION_FUNCTION_SQUARE
+ activation function 17: ACTIVATION_FUNCTION_ABS_ROOT

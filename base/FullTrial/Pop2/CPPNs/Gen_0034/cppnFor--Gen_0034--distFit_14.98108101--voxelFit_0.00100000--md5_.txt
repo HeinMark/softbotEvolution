@@ -1,0 +1,77 @@
+num links:47
+num nodes:16
+ is node number: 15
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : 2.05446
+0->6 : -0.121855
+0->7 : 0.638108
+0->8 : -0.585256
+0->9 : -2.61656
+0->10 : 1.90712
+1->5 : 2.1199
+1->6 : -1.36086
+1->7 : 0.46836
+1->8 : -0.454115
+1->9 : 0.735388
+1->10 : 1.4403
+2->5 : 0.422764
+2->6 : -1.8864
+2->7 : 0.396374
+2->8 : 0.277288
+2->9 : 0.0447892
+2->10 : -0.758628
+3->5 : 1.90198
+3->6 : -1.6194
+3->7 : 0.498499
+3->8 : -1.20972
+3->9 : 0.0817228
+3->10 : 0.95473
+4->5 : -1.3844
+4->6 : 0.526203
+4->7 : 0.898242
+4->8 : -1.41384
+4->9 : -0.0558668
+4->10 : -0.269903
+1->11 : 0.806402
+11->8 : -0.466038
+3->12 : 1.53876
+12->10 : 1.71193
+2->13 : 1.92727
+13->8 : 1.013
+11->9 : -2.21301
+0->11 : -2.59481
+11->10 : -1.28882
+2->14 : 0.288636
+14->13 : -0.424497
+12->7 : -2.45012
+0->15 : 1.13462
+15->6 : -0.0117031
+13->7 : 3
+14->15 : -1.6427
+4->12 : 0.357583
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_LINEAR
+ activation function 12: ACTIVATION_FUNCTION_SIGMOID
+ activation function 13: ACTIVATION_FUNCTION_SIGMOID
+ activation function 14: ACTIVATION_FUNCTION_SIGMOID
+ activation function 15: ACTIVATION_FUNCTION_LINEAR

@@ -1,0 +1,79 @@
+num links:49
+num nodes:16
+ is node number: 15
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : -0.0539324
+0->6 : -0.642729
+0->7 : 0.585548
+0->8 : -0.222242
+0->9 : 0.468661
+0->10 : -0.287179
+1->5 : 0.0809975
+1->6 : 0
+1->7 : 0.500639
+1->8 : 0
+1->9 : 0
+1->10 : 0
+2->5 : 2.53315
+2->6 : 0
+2->7 : -0.765615
+2->8 : -0.165268
+2->9 : 0
+2->10 : 0.862479
+3->5 : 0
+3->6 : 1.90121
+3->7 : 0
+3->8 : -1.89219
+3->9 : 0
+3->10 : -0.980306
+4->5 : 0
+4->6 : -0.0887211
+4->7 : 3
+4->8 : 0.692593
+4->9 : 1.12001
+4->10 : -2.24819
+4->11 : 0.494619
+11->9 : -0.973406
+3->11 : -0.607503
+1->11 : -1.85388
+3->12 : 0.248729
+12->6 : -0.230549
+3->13 : 1.16622
+13->5 : -0.767667
+11->10 : 0.474847
+13->8 : -1.30346
+0->12 : -2.33404
+4->14 : -0.108433
+14->6 : 0.154482
+12->7 : 1.37187
+0->11 : 1.5255
+11->7 : 0.00220719
+14->8 : -0.278275
+0->15 : 0.948401
+15->11 : 0.512741
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_GAUSSIAN
+ activation function 12: ACTIVATION_FUNCTION_SIN
+ activation function 13: ACTIVATION_FUNCTION_SIN
+ activation function 14: ACTIVATION_FUNCTION_ABS_ROOT
+ activation function 15: ACTIVATION_FUNCTION_ABS_ROOT

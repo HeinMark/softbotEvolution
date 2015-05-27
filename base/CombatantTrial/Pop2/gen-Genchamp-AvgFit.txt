@@ -6,40 +6,13 @@
 # 6. average Fitness2 (Minimize Voxels)
 # 7. average Node Count
 
-0001 	1.859272 	0.001000 	0011 	0.627216 	0.220800 	0.627216 	
-# 1. generation
-# 2. genChamp Fitness1 (Maxmimize Distance)
-# 3. genChamp Fitness2 (Minimize Voxels)
-# 4. genChamp Node Count
-# 5. average Fitness1 (Maxmimize Distance)
-# 6. average Fitness2 (Minimize Voxels)
-# 7. average Node Count
-
-0001 	3.711522 	0.001000 	0011 	1.253028 	0.220800 	0.625812 	
-# 1. generation
-# 2. genChamp Fitness1 (Maxmimize Distance)
-# 3. genChamp Fitness2 (Minimize Voxels)
-# 4. genChamp Node Count
-# 5. average Fitness1 (Maxmimize Distance)
-# 6. average Fitness2 (Minimize Voxels)
-# 7. average Node Count
-
-0001 	5.570794 	0.001000 	0011 	1.880244 	0.220800 	0.627216 	
-# 1. generation
-# 2. genChamp Fitness1 (Maxmimize Distance)
-# 3. genChamp Fitness2 (Minimize Voxels)
-# 4. genChamp Node Count
-# 5. average Fitness1 (Maxmimize Distance)
-# 6. average Fitness2 (Minimize Voxels)
-# 7. average Node Count
-
-0001 	7.423044 	0.001000 	0011 	2.506055 	0.220800 	0.625812 	
-# 1. generation
-# 2. genChamp Fitness1 (Maxmimize Distance)
-# 3. genChamp Fitness2 (Minimize Voxels)
-# 4. genChamp Node Count
-# 5. average Fitness1 (Maxmimize Distance)
-# 6. average Fitness2 (Minimize Voxels)
-# 7. average Node Count
-
-0001 	9.282316 	0.001000 	0011 	3.133271 	0.220800 	0.627216 	
+0001 	1.934311 	0.001000 	0011 	0.406724 	0.330700 	0.406724 	
+0002 	1.848742 	0.001000 	0011 	0.046892 	0.220800 	0.046892 	
+0003 	2.679771 	0.001000 	0011 	0.035518 	0.001000 	0.035518 	
+0004 	1.967882 	0.001000 	0011 	0.218577 	0.001000 	0.218577 	
+0005 	2.760517 	0.001000 	0012 	1.247546 	0.001000 	1.247546 	
+0006 	2.862208 	0.001000 	0012 	1.026816 	0.001000 	1.026816 	
+0007 	2.556090 	0.001000 	0012 	0.651080 	0.001000 	0.651080 	
+0008 	2.813866 	0.001000 	0012 	1.034774 	0.001000 	1.034774 	
+0009 	2.421347 	0.001000 	0012 	0.745085 	0.001000 	0.745085 	
+0010 	2.468823 	0.001000 	0012 	0.236915 	0.770300 	0.236915 	

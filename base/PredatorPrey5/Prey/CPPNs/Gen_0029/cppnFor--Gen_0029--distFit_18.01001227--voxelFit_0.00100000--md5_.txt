@@ -1,0 +1,76 @@
+num links:45
+num nodes:17
+ is node number: 16
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : -0.840858
+0->6 : -2.91095
+0->7 : 2.07076
+0->8 : -0.544893
+0->9 : -0.562309
+0->10 : -1.32878
+1->5 : -2.92929
+1->6 : 1.02662
+1->7 : -0.840963
+1->8 : 1.38202
+1->9 : -1.50612
+1->10 : 1.22394
+2->5 : 1.76965
+2->6 : 2.45806
+2->7 : -2.87492
+2->8 : -1.49399
+2->9 : 3
+2->10 : -1.65761
+3->5 : -0.0491421
+3->6 : 2.23717
+3->7 : -2.51447
+3->8 : 0.146605
+3->9 : -2.13739
+3->10 : -1.51831
+4->5 : 2.32937
+4->6 : -0.947647
+4->7 : 1.90767
+4->8 : 1.13626
+4->9 : -1.69901
+4->10 : 0.341427
+0->11 : 0.950687
+11->10 : 0.0563337
+11->6 : 3
+1->12 : 1.04871
+12->6 : -0.137678
+3->11 : -0.73024
+4->12 : -1.08325
+1->13 : 0.670722
+13->5 : 0.0595468
+3->14 : 0.900245
+14->10 : -0.0526975
+4->15 : 1.27341
+15->8 : -0.0619088
+2->16 : 0.890616
+16->8 : -0.369456
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_SIGMOID
+ activation function 12: ACTIVATION_FUNCTION_SQUARE
+ activation function 13: ACTIVATION_FUNCTION_LINEAR
+ activation function 14: ACTIVATION_FUNCTION_LINEAR
+ activation function 15: ACTIVATION_FUNCTION_COS
+ activation function 16: ACTIVATION_FUNCTION_SQUARE

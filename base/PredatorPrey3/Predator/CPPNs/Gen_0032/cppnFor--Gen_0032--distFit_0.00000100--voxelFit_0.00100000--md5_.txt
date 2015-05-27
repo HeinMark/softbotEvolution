@@ -1,0 +1,75 @@
+num links:44
+num nodes:17
+ is node number: 16
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : 3
+0->6 : -0.0724012
+0->7 : -1.98484
+0->8 : -0.0594183
+0->9 : 2.50101
+0->10 : -3
+1->5 : 2.31529
+1->6 : 0.125664
+1->7 : -0.0765627
+1->8 : -1.11752
+1->9 : -1.91526
+1->10 : 2.41278
+2->5 : -1.84952
+2->6 : 1.21194
+2->7 : 2.72019
+2->8 : 2.74039
+2->9 : 0.47438
+2->10 : 0.801521
+3->5 : 1.36785
+3->6 : 2.46355
+3->7 : -0.228179
+3->8 : -1.646
+3->9 : 0.281232
+3->10 : -0.144304
+4->5 : 0.0408689
+4->6 : -0.110212
+4->7 : -0.776244
+4->8 : 2.51648
+4->9 : -2.51869
+4->10 : -0.444641
+3->11 : 1.33109
+11->10 : 0.315625
+3->12 : 1.42828
+12->11 : -0.115411
+11->7 : -0.259665
+4->13 : 1.10006
+13->6 : 0.176177
+2->14 : -0.211087
+14->10 : 0.49838
+4->15 : 1.30722
+15->5 : -0.19045
+15->7 : 0.0986915
+3->16 : 0
+16->11 : 0.337546
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_SIN
+ activation function 12: ACTIVATION_FUNCTION_COS
+ activation function 13: ACTIVATION_FUNCTION_SIGMOID
+ activation function 14: ACTIVATION_FUNCTION_ABS_ROOT
+ activation function 15: ACTIVATION_FUNCTION_SIGMOID
+ activation function 16: ACTIVATION_FUNCTION_LINEAR

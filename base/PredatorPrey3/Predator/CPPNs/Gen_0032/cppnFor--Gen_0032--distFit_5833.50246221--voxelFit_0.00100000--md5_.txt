@@ -1,0 +1,75 @@
+num links:44
+num nodes:17
+ is node number: 16
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : 2.68677
+0->6 : -1.11721
+0->7 : 0.0362389
+0->8 : -0.312387
+0->9 : 2.58931
+0->10 : -2.95262
+1->5 : 2.3011
+1->6 : 0.183219
+1->7 : -0.375395
+1->8 : -0.999118
+1->9 : -1.57959
+1->10 : 2.36279
+2->5 : -1.86171
+2->6 : 1.13508
+2->7 : 3
+2->8 : 3
+2->9 : 0.373673
+2->10 : 0.67022
+3->5 : 0.912628
+3->6 : 2.35487
+3->7 : -1.86174
+3->8 : -1.82504
+3->9 : 0.115003
+3->10 : -0.475765
+4->5 : 0.221919
+4->6 : -0.308724
+4->7 : -0.529439
+4->8 : 2.5814
+4->9 : -2.25137
+4->10 : 0.0833076
+3->11 : 1.22695
+11->10 : 0.0293525
+3->12 : 1.6363
+12->11 : -0.303001
+11->7 : 0.435186
+4->13 : 0.542864
+13->6 : 0.109214
+2->14 : -0.103841
+14->10 : 0.550855
+4->15 : 1.27095
+15->5 : 0.146643
+15->7 : 0.477919
+3->16 : 0.0142071
+16->11 : 0.444424
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_SIN
+ activation function 12: ACTIVATION_FUNCTION_COS
+ activation function 13: ACTIVATION_FUNCTION_SIGMOID
+ activation function 14: ACTIVATION_FUNCTION_ABS_ROOT
+ activation function 15: ACTIVATION_FUNCTION_SIGMOID
+ activation function 16: ACTIVATION_FUNCTION_LINEAR

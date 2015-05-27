@@ -1,0 +1,74 @@
+num links:43
+num nodes:17
+ is node number: 16
+Bias is node number: 0
+OutputActivePhase1 is node number: 9
+OutputActivePhase2 is node number: 10
+OutputMaterialOrEmpty is node number: 5
+OutputMuscleOrTissue is node number: 6
+OutputPassiveSoft is node number: 8
+OutputPassiveStiff is node number: 7
+d is node number: 4
+x is node number: 1
+y is node number: 2
+z is node number: 3
+0->5 : 2.18033
+0->6 : -0.328678
+0->7 : 1.46084
+0->8 : -0.214639
+0->9 : -0.852531
+0->10 : -1.56233
+1->5 : -1.56566
+1->6 : 0.394589
+1->7 : -2.51718
+1->8 : 0.605931
+1->9 : -0.179963
+1->10 : -1.44774
+2->5 : 1.29543
+2->6 : 1.05754
+2->7 : -0.198837
+2->8 : 0.332184
+2->9 : -2.97198
+2->10 : 2.71034
+3->5 : 0.0625579
+3->6 : 0.269001
+3->7 : 1.01954
+3->8 : -0.287579
+3->9 : -1.21407
+3->10 : -0.0443938
+4->5 : -0.0332153
+4->6 : -1.69182
+4->7 : -0.50272
+4->8 : 0.35397
+4->9 : 0.941571
+4->10 : 0.328373
+0->11 : 0.116373
+11->9 : -0.350398
+0->12 : 1.06648
+12->5 : -0.17094
+0->13 : 1.0685
+13->7 : 0.283013
+1->14 : 1.09763
+14->10 : -0.948408
+1->15 : 1.30702
+15->6 : 0.155699
+12->6 : -3
+2->16 : 0.848951
+16->5 : 0.153089
+ activation function 0: ACTIVATION_FUNCTION_SIGMOID
+ activation function 1: ACTIVATION_FUNCTION_SIGMOID
+ activation function 2: ACTIVATION_FUNCTION_SIGMOID
+ activation function 3: ACTIVATION_FUNCTION_SIGMOID
+ activation function 4: ACTIVATION_FUNCTION_SIGMOID
+ activation function 5: ACTIVATION_FUNCTION_SIGMOID
+ activation function 6: ACTIVATION_FUNCTION_SIGMOID
+ activation function 7: ACTIVATION_FUNCTION_SIGMOID
+ activation function 8: ACTIVATION_FUNCTION_SIGMOID
+ activation function 9: ACTIVATION_FUNCTION_SIGMOID
+ activation function 10: ACTIVATION_FUNCTION_SIGMOID
+ activation function 11: ACTIVATION_FUNCTION_SQUARE
+ activation function 12: ACTIVATION_FUNCTION_GAUSSIAN
+ activation function 13: ACTIVATION_FUNCTION_SIGMOID
+ activation function 14: ACTIVATION_FUNCTION_LINEAR
+ activation function 15: ACTIVATION_FUNCTION_SQUARE
+ activation function 16: ACTIVATION_FUNCTION_SIN
